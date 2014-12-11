@@ -1,6 +1,6 @@
 $teal:#59B0B4;
 $grey:#777777;
-$white:#F5F3F7;
+$white:#F6F3F7;
 $green:#BCC679;
 
 
@@ -57,4 +57,9 @@ nav li{
 .top{
 background-color:$green;
 padding:10%;
+}
+
+div .catalog{
+	background-color:$white;
+	padding:1%;
 }

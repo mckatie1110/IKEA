@@ -1,5 +1,5 @@
 html {
-  background-color: #F5F3F7; }
+  background-color: #F6F3F7; }
 
 h1 {
   font-family: "futura-pt", sans-serif;
@@ -38,5 +38,9 @@ nav li {
 .top {
   background-color: #BCC679;
   padding: 10%; }
+
+div .catalog {
+  background-color: #F6F3F7;
+  padding: 1%; }
 
 /*# sourceMappingURL=style.css.map */
