@@ -14,16 +14,17 @@ h1{
 }
 
 h2{
-font-family: "futura-pt",sans-serif;
-font-style: italic;
-font-weight: 500;
+	font-family: "futura-pt",sans-serif;
+	font-style: italic;
+	font-weight: 500;
 }
 
-p{
-font-family: "futura-pt",sans-serif;
-font-style: normal;
-font-weight: 400;
+.top p{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
 }
+
 .banner::after {
 content: "";
 clear: both;
@@ -77,6 +78,35 @@ div .catalog{
 
 .PS2014{
 	background-color:$green;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.nowatikea{
+	background-color:$teal;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:10%;
+	padding-right:10%;
+		p{
+			font-family: "futura-pt",sans-serif;
+			font-style: normal;
+			font-weight: 400;
+		}
+}
+
+.featured{
+	background-color:$green;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.ideas{
+	background-color:$teal;
 	padding-top:1%;
 	padding-bottom:1%;
 	padding-left:10%;

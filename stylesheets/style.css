@@ -10,7 +10,7 @@ h2 {
   font-style: italic;
   font-weight: 500; }
 
-p {
+.top p {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400; }
@@ -55,6 +55,31 @@ div .catalog {
 
 .PS2014 {
   background-color: #BCC679;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.nowatikea {
+  background-color: #59B0B4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
+  .nowatikea p {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400; }
+
+.featured {
+  background-color: #BCC679;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.ideas {
+  background-color: #59B0B4;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 10%;
