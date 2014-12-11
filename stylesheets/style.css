@@ -37,10 +37,27 @@ nav li {
 
 .top {
   background-color: #BCC679;
-  padding: 10%; }
+  padding-top: 5%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 div .catalog {
   background-color: #F6F3F7;
   padding: 1%; }
+
+.inspiration {
+  background-color: #59B0B4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.PS2014 {
+  background-color: #BCC679;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 /*# sourceMappingURL=style.css.map */
