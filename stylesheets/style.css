@@ -1,5 +1,34 @@
-h1, h2 {
+html {
+  background-color: #F5F3F7; }
+
+h1 {
   font-family: "futura-pt", sans-serif;
   color: #777777; }
+
+h2 {
+  font-family: "futura-pt",sans-serif;
+  font-style: italic;
+  font-weight: 500; }
+
+p {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.banner div {
+  background-color: #59B0B4;
+  padding: 0.8%;
+  float: left; }
+  .banner div a {
+    float: left;
+    padding: 2%; }
+
+nav li {
+  float: left;
+  list-style-type: none;
+  padding: 1%; }
+
+.bedroomtop {
+  background-color: #BCC679; }
 
 /*# sourceMappingURL=style.css.map */

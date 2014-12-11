@@ -1,4 +1,47 @@
-h1, h2{
+$teal:#59B0B4;
+$grey:#777777;
+$white:#F5F3F7;
+$green:#BCC679;
+
+
+html{
+	background-color:$white;
+}
+
+h1{
  	font-family: "futura-pt", sans-serif;
-	color: #777777;
+	color: $grey;
+}
+
+h2{
+font-family: "futura-pt",sans-serif;
+font-style: italic;
+font-weight: 500;
+}
+
+p{
+font-family: "futura-pt",sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+
+.banner div{
+	background-color:$teal;
+	padding:0.8%;
+	float:left;
+
+	a{
+		float:left;
+		padding:2%;
+	}
+}
+
+nav li{
+	float:left;
+	list-style-type: none;
+	padding:1%;
+}
+
+.bedroomtop{
+background-color:$green;
 }
