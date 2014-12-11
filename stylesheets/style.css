@@ -15,20 +15,28 @@ p {
   font-style: normal;
   font-weight: 400; }
 
+.banner::after {
+  content: "";
+  clear: both;
+  display: block; }
+
 .banner div {
   background-color: #59B0B4;
-  padding: 0.8%;
-  float: left; }
+  padding: 0.8%; }
   .banner div a {
-    float: left;
     padding: 2%; }
+  .banner div.logo, .banner div.needhelp {
+    float: left; }
+  .banner div.logincartlist, .banner div.ikeafamily {
+    float: right; }
 
 nav li {
   float: left;
   list-style-type: none;
   padding: 1%; }
 
-.bedroomtop {
-  background-color: #BCC679; }
+.top {
+  background-color: #BCC679;
+  padding: 10%; }
 
 /*# sourceMappingURL=style.css.map */
