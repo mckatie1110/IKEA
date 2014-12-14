@@ -28,22 +28,38 @@ h2{
 	color:$grey;
 }
 
-.top p{
+h4{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size:1.25em;
+	line-height:1.25;
+	padding-bottom:2%;
+	color:black;
+}
+
+p{
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	line-height:1.35;
-	font-size:1em;
+	line-height:1.15;
+	font-size:1.1em;
 	padding-bottom:10%;
 }
+
 
 a{
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	line-height:1.35;
-	font-size:1em;
+	line-height:1.45;
+	font-size:1.15em;
 	text-decoration:none;
+	color:black;
+}
+
+a:hover{
+	color:$grey;
 }
 
 img{
@@ -54,7 +70,18 @@ img{
 
 .logo{
 	width:150px;
+	margin-top:5%;
+	margin-left:5%;
 }
+
+.slogan{
+		color:$grey;
+		margin-top:0;
+		margin-left:10%;
+		padding-bottom:10%;
+		line-height:0.2;
+}
+
 
 .banner::after {
 content: "";
@@ -64,11 +91,19 @@ display: block;
 
 .banner div{
 	background-color:$background;
-	padding:0.8%;
 
 	a{
+		line-height: 1;
+		margin-left:10%;
 		padding:2%;
 		color:black;
+
+	}
+
+	p{
+		line-height: 1;
+		padding:0;
+		margin-left:10%;
 	}
 
 	&.logo, &.needhelp{
@@ -100,25 +135,35 @@ nav li{
    -moz-border-radius: 0px;
    border-radius: 0px;
    color: #000000;
-   		font-family: "futura-pt",sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-   text-decoration: none;
-   vertical-align: middle;
+   		
+   		a{
+	   		font-family: "futura-pt",sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+	   		text-decoration: none;
+	   		vertical-align: middle;
+   		}
+
+
    }
 .button:hover {
-   border-top-color: #59afb4;
-   background: #59afb4;
+   border-top-color: $grey;
+   background: $grey;
    color: $background;
+
+    a, a:hover{
+	color:white;
    }
+  }
+
 .button:active {
-   border-top-color: #59afb4;
-   background: #59afb4;
+   border-top-color: $grey;
+   background: $grey;
    }
 
  .dropdown{
-   	float:right;
+   float:right;
    border-top: 0px;
    border-bottom: 0px;
    background: $background;
@@ -138,15 +183,24 @@ nav li{
 		font-size: 18px;
    text-decoration: none;
    vertical-align: middle;
+
+   	img{
+   		padding:0%;
+   		width:25%;
+   	}
+
+   	a{
+   		padding:10%;
+   	}
    }
 .button:hover {
-   border-top-color: #59afb4;
-   background: #59afb4;
+   border-top-color: $grey;
+   background: $grey;
    color: $background;
    }
 .button:active {
-   border-top-color: #59afb4;
-   background: #59afb4;
+   border-top-color: $grey;
+   background: $grey;
    }
    
 
@@ -155,6 +209,7 @@ nav li{
 	padding-top:12%;
 	padding-bottom:5%;
 	padding-left:5%;
+	padding-right:5%;
 	   color: #000000;
    		font-family:sans-serif;
 		font-style: normal;
@@ -165,14 +220,20 @@ nav li{
 .top{
 background-color:$green;
 padding-top:15%;
-padding-bottom:15%;
+padding-bottom:5%;
 padding-left:12%;
 padding-right:12%;
+	
+	p{
+		line-height:1.5;
+	}
 }
 
-div .catalog{
-	background-color:$background;
-	padding:5%;
+.catalog{
+	background-color:$green;
+	padding-top:0;
+	padding-left:12%;
+	padding-bottom:10%;
 }
 
 .inspiration{
@@ -201,6 +262,7 @@ div .catalog{
 			font-family: "futura-pt",sans-serif;
 			font-style: normal;
 			font-weight: 400;
+			line-height: 1.5;
 		}
 }
 
@@ -210,6 +272,13 @@ div .catalog{
 	padding-bottom:15%;
 	padding-left:12%;
 	padding-right:12%;
+
+	p{
+			font-family: "futura-pt",sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1.5;
+		}
 }
 
 .ideas{
@@ -231,10 +300,9 @@ div .catalog{
 	font-style: normal;
 	font-weight: 400;
 	line-height:1.5;
-	font-size:1.1em;
+	font-size:1em;
 
 	p{
-		float:left;
 		padding-right:10%;
 		padding-top:4%;
 		padding-bottom:4%;
@@ -250,20 +318,22 @@ div .catalog{
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-	padding-top:8%;
-	padding-bottom:8%;
-	padding-left:8%;
+	padding-top:1%;
+	padding-bottom:1%;
+	padding-left:10%;
 	padding-right:15%;
-	float:left;
 	font-family: "futura-pt",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	line-height:1.5;
-	font-size:1.1em;
+	line-height:1.2;
+	font-size:1em;
 
-	p{
+	ul{
+		display:none;
+	}
+
+	li{
 		padding-right:10%;
-		padding-top:4%;
 	}
 
 

@@ -82,21 +82,34 @@ h2 {
   padding-bottom: 8%;
   color: #0A70B8; }
 
-.top p {
+h4 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 1.25;
+  padding-bottom: 2%;
+  color: black; }
+
+p {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.35;
-  font-size: 1em;
+  line-height: 1.15;
+  font-size: 1.1em;
   padding-bottom: 10%; }
 
 a {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.35;
-  font-size: 1em;
-  text-decoration: none; }
+  line-height: 1.45;
+  font-size: 1.15em;
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: #0A70B8; }
 
 img {
   width: 100%;
@@ -104,7 +117,16 @@ img {
   padding-bottom: 6%; }
 
 .logo {
-  width: 150px; }
+  width: 150px;
+  margin-top: 5%;
+  margin-left: 5%; }
+
+.slogan {
+  color: #0A70B8;
+  margin-top: 0;
+  margin-left: 10%;
+  padding-bottom: 10%;
+  line-height: 0.2; }
 
 .banner::after {
   content: "";
@@ -112,11 +134,16 @@ img {
   display: block; }
 
 .banner div {
-  background-color: #F6F3F7;
-  padding: 0.8%; }
+  background-color: #F6F3F7; }
   .banner div a {
+    line-height: 1;
+    margin-left: 10%;
     padding: 2%;
     color: black; }
+  .banner div p {
+    line-height: 1;
+    padding: 0;
+    margin-left: 10%; }
   .banner div.logo, .banner div.needhelp {
     float: none; }
   .banner div.logincartlist, .banner div.ikeafamily {
@@ -139,22 +166,25 @@ nav li {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  color: #000000;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  vertical-align: middle; }
+  color: #000000; }
+  .button a {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle; }
 
 .button:hover {
-  border-top-color: #59afb4;
-  background: #59afb4;
+  border-top-color: #0A70B8;
+  background: #0A70B8;
   color: #F6F3F7; }
+  .button:hover a, .button:hover a:hover {
+    color: white; }
 
 .button:active {
-  border-top-color: #59afb4;
-  background: #59afb4; }
+  border-top-color: #0A70B8;
+  background: #0A70B8; }
 
 .dropdown {
   float: right;
@@ -177,21 +207,27 @@ nav li {
   font-size: 18px;
   text-decoration: none;
   vertical-align: middle; }
+  .dropdown img {
+    padding: 0%;
+    width: 25%; }
+  .dropdown a {
+    padding: 10%; }
 
 .button:hover {
-  border-top-color: #59afb4;
-  background: #59afb4;
+  border-top-color: #0A70B8;
+  background: #0A70B8;
   color: #F6F3F7; }
 
 .button:active {
-  border-top-color: #59afb4;
-  background: #59afb4; }
+  border-top-color: #0A70B8;
+  background: #0A70B8; }
 
 .recall {
   float: none;
   padding-top: 12%;
   padding-bottom: 5%;
   padding-left: 5%;
+  padding-right: 5%;
   color: #000000;
   font-family: sans-serif;
   font-style: normal;
@@ -201,13 +237,17 @@ nav li {
 .top {
   background-color: #BCC679;
   padding-top: 15%;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
   padding-left: 12%;
   padding-right: 12%; }
+  .top p {
+    line-height: 1.5; }
 
-div .catalog {
-  background-color: #F6F3F7;
-  padding: 5%; }
+.catalog {
+  background-color: #BCC679;
+  padding-top: 0;
+  padding-left: 12%;
+  padding-bottom: 10%; }
 
 .inspiration {
   background-color: #F6F3F7;
@@ -232,7 +272,8 @@ div .catalog {
   .nowatikea p {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1.5; }
 
 .featured {
   background-color: #BCC679;
@@ -240,6 +281,11 @@ div .catalog {
   padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
+  .featured p {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; }
 
 .ideas {
   background-color: #F6F3F7;
@@ -257,9 +303,8 @@ div .catalog {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 1.1em; }
+  font-size: 1em; }
   .bottomnav p {
-    float: left;
     padding-right: 10%;
     padding-top: 4%;
     padding-bottom: 4%; }
@@ -269,19 +314,19 @@ div .catalog {
     color: #0A70B8; }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-  padding-top: 8%;
-  padding-bottom: 8%;
-  padding-left: 8%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
   padding-right: 15%;
-  float: left;
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
-  font-size: 1.1em; }
-  div .CandB p, .NH p, .IS p, .TisI p, .WatI p {
-    padding-right: 10%;
-    padding-top: 4%; }
+  line-height: 1.2;
+  font-size: 1em; }
+  div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
+    display: none; }
+  div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
+    padding-right: 10%; }
   div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
     color: black;
     text-decoration: none; }
