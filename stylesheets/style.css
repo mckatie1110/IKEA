@@ -111,11 +111,6 @@ a {
 a:hover {
   color: #0A70B8; }
 
-img {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 6%; }
-
 .logo {
   width: 150px;
   margin-top: 5%;
@@ -124,7 +119,7 @@ img {
 .slogan {
   color: #0A70B8;
   margin-top: 0;
-  margin-left: 10%;
+  margin-left: 6%;
   padding-bottom: 10%;
   line-height: 0.2; }
 
@@ -135,15 +130,22 @@ img {
 
 .banner div {
   background-color: #F6F3F7; }
+  .banner div img {
+    width: 15%;
+    margin: 0;
+    padding-bottom: 2%; }
   .banner div a {
     line-height: 1;
     margin-left: 10%;
-    padding: 2%;
     color: black; }
+  .banner div a:hover {
+    color: #0A70B8; }
   .banner div p {
     line-height: 1;
-    padding: 0;
-    margin-left: 10%; }
+    padding-top: 2%;
+    padding-right: 15%;
+    margin-left: 2%;
+    float: right; }
   .banner div.logo, .banner div.needhelp {
     float: none; }
   .banner div.logincartlist, .banner div.ikeafamily {
@@ -208,8 +210,8 @@ nav li {
   text-decoration: none;
   vertical-align: middle; }
   .dropdown img {
-    padding: 0%;
-    width: 25%; }
+    float: left;
+    width: 15%; }
   .dropdown a {
     padding: 10%; }
 
@@ -224,7 +226,7 @@ nav li {
 
 .recall {
   float: none;
-  padding-top: 12%;
+  padding-top: 25%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
@@ -236,18 +238,42 @@ nav li {
 
 .top {
   background-color: #BCC679;
-  padding-top: 15%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 2%;
   padding-left: 12%;
   padding-right: 12%; }
   .top p {
+    padding-top: 5%;
     line-height: 1.5; }
+  .top img {
+    width: 100%; }
+
+.toy, .family, .savings, .xcards {
+  padding-bottom: 8%; }
+  .toy img, .family img, .savings img, .xcards img {
+    width: 100%; }
+  .toy img:hover, .family img:hover, .savings img:hover, .xcards img:hover {
+    width: 101%;
+    border-top: 5pt white solid; }
+  .toy h2, .family h2, .savings h2, .xcards h2 {
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%; }
+
+.xcards {
+  width: 92%; }
+  .xcards div {
+    background-color: white; }
 
 .catalog {
   background-color: #BCC679;
   padding-top: 0;
-  padding-left: 12%;
+  padding-left: 15%;
   padding-bottom: 10%; }
+  .catalog ul {
+    padding-left: 2%; }
+  .catalog li, .catalog li:hover {
+    color: #0A70B8; }
 
 .inspiration {
   background-color: #F6F3F7;
@@ -255,13 +281,29 @@ nav li {
   padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
+  .inspiration img {
+    width: 100%;
+    padding-bottom: 3%; }
+  .inspiration img:hover {
+    width: 101%;
+    border-top: 5pt #F6F3F7 solid; }
 
 .PS2014 {
   background-color: #BCC679;
   padding-top: 15%;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
   padding-left: 12%;
   padding-right: 12%; }
+  .PS2014 img {
+    width: 100%;
+    padding-bottom: 0%; }
+  .PS2014 img:hover {
+    width: 101%;
+    border-top: 5pt #BCC679 solid; }
+  .PS2014 h3 {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400; }
 
 .nowatikea {
   background-color: #F6F3F7;
@@ -274,6 +316,8 @@ nav li {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; }
+  .nowatikea img {
+    width: 100%; }
 
 .featured {
   background-color: #BCC679;
@@ -286,6 +330,8 @@ nav li {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; }
+  .featured img {
+    width: 100%; }
 
 .ideas {
   background-color: #F6F3F7;
@@ -293,17 +339,20 @@ nav li {
   padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
+  .ideas img {
+    width: 100%; }
 
 .bottomnav {
   padding-top: 8%;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
   padding-left: 8%;
   padding-right: 15%;
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5;
-  font-size: 1em; }
+  line-height: 1.5; }
+  .bottomnav h3 {
+    font-size: 1.5em; }
   .bottomnav p {
     padding-right: 10%;
     padding-top: 4%;
@@ -314,7 +363,8 @@ nav li {
     color: #0A70B8; }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-  padding-top: 1%;
+  background-color: #BCC679;
+  padding-top: 4%;
   padding-bottom: 1%;
   padding-left: 10%;
   padding-right: 15%;
@@ -331,6 +381,12 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     color: black;
     text-decoration: none; }
   div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
-    color: #0A70B8; }
+    color: white; }
+
+div .CandB {
+  padding-top: 10%; }
+
+.WatI {
+  padding-bottom: 10%; }
 
 /*# sourceMappingURL=style.css.map */

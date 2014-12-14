@@ -1,350 +1,417 @@
-@import 'reset';
+@import "reset";
 
-$background:#F6F3F7;
-$grey:#0A70B8;
-$green:#BCC679;
+$background: #F6F3F7;
+$grey: #0A70B8;
+$green: #BCC679;
 
-
-html{
-	background-color:$background;
+html {
+    background-color: $background;
 }
 
-h1{
- 	font-family: "futura-pt", sans-serif;
-	color: black;
-	font-size:2em;
-	line-height:1.25;
-	padding-bottom:3%;
-
+h1 {
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    font-size: 2em;
+    line-height: 1.25;
+    padding-bottom: 3%;
 }
 
-h2{
-	font-family: "futura-pt",sans-serif;
-	font-style: italic;
-	font-weight: 500;
-	font-size:1.5em;
-	line-height:1.25;
-	padding-bottom:8%;
-	color:$grey;
+h2 {
+    font-family: "futura-pt",sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.25;
+    padding-bottom: 8%;
+    color: $grey;
 }
 
-h4{
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	font-size:1.25em;
-	line-height:1.25;
-	padding-bottom:2%;
-	color:black;
+h4 {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 1.25;
+    padding-bottom: 2%;
+    color: black;
 }
 
-p{
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.15;
-	font-size:1.1em;
-	padding-bottom:10%;
+p {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    font-size: 1.1em;
+    padding-bottom: 10%;
 }
 
-
-a{
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.45;
-	font-size:1.15em;
-	text-decoration:none;
-	color:black;
+a {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: black;
 }
 
-a:hover{
-	color:$grey;
+a:hover {
+    color: $grey;
 }
 
-img{
-	width:100%;
-	height:100%;
-	padding-bottom:6%;
+.logo {
+    width: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
-.logo{
-	width:150px;
-	margin-top:5%;
-	margin-left:5%;
+.slogan {
+    color: $grey;
+    margin-top: 0;
+    margin-left: 6%;
+    padding-bottom: 10%;
+    line-height: 0.2;
 }
-
-.slogan{
-		color:$grey;
-		margin-top:0;
-		margin-left:10%;
-		padding-bottom:10%;
-		line-height:0.2;
-}
-
 
 .banner::after {
-content: "";
-clear: both;
-display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.banner div{
-	background-color:$background;
-
-	a{
-		line-height: 1;
-		margin-left:10%;
-		padding:2%;
-		color:black;
-
-	}
-
-	p{
-		line-height: 1;
-		padding:0;
-		margin-left:10%;
-	}
-
-	&.logo, &.needhelp{
-		float:none;
-	}
-
-	&.logincartlist, &.ikeafamily{
-		float:none;
-	}
+.banner div {
+    background-color: $background;
+    img {
+        width: 15%;
+        margin: 0;
+        padding-bottom: 2%;
+    }
+    a {
+        line-height: 1;
+        margin-left: 10%;
+        color: black;
+    }
+    a:hover {
+        color: $grey;
+    }
+    p {
+        line-height: 1;
+        padding-top: 2%;
+        padding-right: 15%;
+        margin-left: 2%;
+        float: right;
+    }
+    &.logo, &.needhelp {
+        float: none;
+    }
+    &.logincartlist, &.ikeafamily {
+        float: none;
+    }
 }
 
-
-nav li{
-	float:none;
-	list-style-type: none;
+nav li {
+    float: none;
+    list-style-type: none;
 }
 
 .button {
-   border-top: 0px;
-   border-bottom: 0px;
-   background: $background;
-   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-   background: -webkit-linear-gradient(top, $background, #bcc679);
-   background: -moz-linear-gradient(top, $background, #bcc679);
-   background: -ms-linear-gradient(top, $background, #bcc679);
-   background: -o-linear-gradient(top, $background, #bcc679);
-   padding: 9.5px 19px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   color: #000000;
-   		
-   		a{
-	   		font-family: "futura-pt",sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 18px;
-	   		text-decoration: none;
-	   		vertical-align: middle;
-   		}
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $background;
+    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+    background: -webkit-linear-gradient(top, $background, #bcc679);
+    background: -moz-linear-gradient(top, $background, #bcc679);
+    background: -ms-linear-gradient(top, $background, #bcc679);
+    background: -o-linear-gradient(top, $background, #bcc679);
+    padding: 9.5px 19px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #000000;
+    a {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+}
 
-
-   }
 .button:hover {
-   border-top-color: $grey;
-   background: $grey;
-   color: $background;
-
-    a, a:hover{
-	color:white;
-   }
-  }
+    border-top-color: $grey;
+    background: $grey;
+    color: $background;
+    a, a:hover {
+        color: white;
+    }
+}
 
 .button:active {
-   border-top-color: $grey;
-   background: $grey;
-   }
+    border-top-color: $grey;
+    background: $grey;
+}
 
- .dropdown{
-   float:right;
-   border-top: 0px;
-   border-bottom: 0px;
-   background: $background;
-   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-   background: -webkit-linear-gradient(top, $background, #bcc679);
-   background: -moz-linear-gradient(top, $background, #bcc679);
-   background: -ms-linear-gradient(top, $background, #bcc679);
-   background: -o-linear-gradient(top, $background, #bcc679);
-   padding: 9.5px 19px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   color: #000000;
-   		font-family: "futura-pt",sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-   text-decoration: none;
-   vertical-align: middle;
+.dropdown {
+    float: right;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $background;
+    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+    background: -webkit-linear-gradient(top, $background, #bcc679);
+    background: -moz-linear-gradient(top, $background, #bcc679);
+    background: -ms-linear-gradient(top, $background, #bcc679);
+    background: -o-linear-gradient(top, $background, #bcc679);
+    padding: 9.5px 19px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #000000;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    img {
+        float: left;
+        width: 15%;
+    }
+    a {
+        padding: 10%;
+    }
+}
 
-   	img{
-   		padding:0%;
-   		width:25%;
-   	}
-
-   	a{
-   		padding:10%;
-   	}
-   }
 .button:hover {
-   border-top-color: $grey;
-   background: $grey;
-   color: $background;
-   }
+    border-top-color: $grey;
+    background: $grey;
+    color: $background;
+}
+
 .button:active {
-   border-top-color: $grey;
-   background: $grey;
-   }
-   
-
-.recall{
-	float:none;
-	padding-top:12%;
-	padding-bottom:5%;
-	padding-left:5%;
-	padding-right:5%;
-	   color: #000000;
-   		font-family:sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 14px;
+    border-top-color: $grey;
+    background: $grey;
 }
 
-.top{
-background-color:$green;
-padding-top:15%;
-padding-bottom:5%;
-padding-left:12%;
-padding-right:12%;
-	
-	p{
-		line-height:1.5;
-	}
+.recall {
+    float: none;
+    padding-top: 25%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
 }
 
-.catalog{
-	background-color:$green;
-	padding-top:0;
-	padding-left:12%;
-	padding-bottom:10%;
+.top {
+    background-color: $green;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    padding-left: 12%;
+    padding-right: 12%;
+    p {
+    	padding-top: 5%;
+        line-height: 1.5;
+    }
+    img {
+        width: 100%;
+    }
 }
 
-.inspiration{
-	background-color:$background;
-	padding-top:15%;
-	padding-bottom:15%;
-	padding-left:12%;
-	padding-right:12%;
+.toy, .family, .savings, .xcards {
+    padding-bottom: 8%;
+    img {
+        width: 100%;
+    }
+
+    img:hover{
+    	width: 101%;
+    	border-top:5pt white solid;
+    }
+
+    h2 {
+        margin-top: 2%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 
-.PS2014{
-	background-color:$green;
-	padding-top:15%;
-	padding-bottom:15%;
-	padding-left:12%;
-	padding-right:12%;
+.xcards {
+    width: 92%;
+
+    div{
+    	background-color:white;
+    }
 }
 
-.nowatikea{
-	background-color:$background;
-	padding-top:15%;
-	padding-bottom:15%;
-	padding-left:12%;
-	padding-right:12%;
-		p{
-			font-family: "futura-pt",sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 1.5;
-		}
+//**Bedroom**//
+
+.catalog {
+    background-color: $green;
+    padding-top: 0;
+    padding-left: 15%;
+    padding-bottom: 10%;
+
+    ul{
+    	padding-left:2%;
+    }
+
+    li, li:hover{
+    	color:$grey;
+    }
 }
 
-.featured{
-	background-color:$green;
-	padding-top:15%;
-	padding-bottom:15%;
-	padding-left:12%;
-	padding-right:12%;
+.inspiration {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
 
-	p{
-			font-family: "futura-pt",sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 1.5;
-		}
+    img{
+    	width:100%;
+    	padding-bottom:3%;
+    }
+
+      img:hover{
+    	width: 101%;
+    	border-top:5pt $background solid;
+    }
 }
 
-.ideas{
-	background-color:$background;
-	padding-top:15%;
-	padding-bottom:15%;
-	padding-left:12%;
-	padding-right:12%;
+.PS2014 {
+    background-color: $green;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+
+    img{
+    	width:100%;
+     	padding-bottom:0%;
+    }
+
+      img:hover{
+    	width: 101%;
+    	border-top:5pt $green solid;
+    }
+
+    h3{
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.nowatikea {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+    
+    p {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    img{
+    	width:100%;
+    }
+}
+
+.featured {
+    background-color: $green;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+    p {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    img{
+    	width:100%;
+    }
+}
+
+.ideas {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+
+    img{
+    	width:100%;
+    }
 }
 
 //**Footer**//
 
-.bottomnav{
-	padding-top:8%;
-	padding-bottom:8%;
-	padding-left:8%;
-	padding-right:15%;
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.5;
-	font-size:1em;
-
-	p{
-		padding-right:10%;
-		padding-top:4%;
-		padding-bottom:4%;
-	}
-
-	a{
-		color:black;
-	}
-
-	a:hover{
-		color:$grey;
-	}
+.bottomnav {
+    padding-top: 8%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        padding-right: 10%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        color: $grey;
+    }
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-	padding-top:1%;
-	padding-bottom:1%;
-	padding-left:10%;
-	padding-right:15%;
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.2;
-	font-size:1em;
+    background-color: $green;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1em;
+    ul {
+        display: none;
+    }
+    li {
+        padding-right: 10%;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+}
 
-	ul{
-		display:none;
-	}
+div .CandB {
+    padding-top: 10%;
+}
 
-	li{
-		padding-right:10%;
-	}
-
-
-		a{
-		color:black;
-		text-decoration: none;
-			}
-
-		a:hover{
-		color:$grey;
-			}
-
-
+.WatI {
+    padding-bottom: 10%;
 }
