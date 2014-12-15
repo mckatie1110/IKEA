@@ -8,12 +8,17 @@ html {
     background-color: $background;
 }
 
+<<<<<<< HEAD
 h1 {
     font-family: "futura-pt", sans-serif;
     color: black;
     font-size: 2em;
     line-height: 1.25;
     padding-bottom: 3%;
+=======
+html{
+	background-color:white;
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
 }
 
 h2 {
@@ -79,6 +84,7 @@ a:hover {
     display: block;
 }
 
+<<<<<<< HEAD
 .banner div {
     background-color: $background;
     img {
@@ -136,6 +142,35 @@ nav li {
         text-decoration: none;
         vertical-align: middle;
     }
+=======
+img{
+	max-width:100%;
+	padding-bottom:6%;
+}
+
+.logo{
+	max-width:150px;
+	margin-top:5%;
+	margin-left:20px;
+}
+
+.search{
+		position:fixed;
+		margin-left:80%;
+		top:2.5%;
+		width:10%;
+		height:5%;
+
+	}
+
+
+.slogan{
+		color:$grey;
+		margin-top:0;
+		margin-left:40px;
+		padding-bottom:10%;
+		line-height:0.2;
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
 }
 
 .button:hover {
@@ -152,6 +187,7 @@ nav li {
     background: $grey;
 }
 
+<<<<<<< HEAD
 .dropdown {
     float: right;
     border-top: 0px;
@@ -181,6 +217,9 @@ nav li {
         padding: 10%;
     }
 }
+=======
+.banner div{
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
 
 .button:hover {
     border-top-color: $grey;
@@ -193,6 +232,7 @@ nav li {
     background: $grey;
 }
 
+<<<<<<< HEAD
 .recall {
     float: none;
     padding-top: 25%;
@@ -237,6 +277,41 @@ nav li {
         margin-left: 8%;
         margin-right: 8%;
     }
+=======
+	p{
+		line-height: 1;
+		padding:0;
+		margin-left:10%;
+	}
+}
+
+	.login, .needhelp, .cart, .wishlist, .ikeafamily, .email{
+		float:none;
+		max-width:20%;
+		margin-top:2.5%;
+		margin-left:15%;
+
+
+		a{
+			position:absolute;
+			margin-top: 5%;
+			margin-left:12%;
+		}
+
+		a:hover{
+			color:$grey;
+			}		
+
+	}
+
+
+	li{
+		list-style: none;
+	}
+
+.email{
+	padding-bottom:5%;
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
 }
 
 .xcards {
@@ -259,9 +334,59 @@ nav li {
     	padding-left:2%;
     }
 
+<<<<<<< HEAD
     li, li:hover{
     	color:$grey;
     }
+=======
+.top{
+background-color:$green;
+
+
+	img{
+		max-width:100%;
+	}
+	
+	h1{
+		padding-top:10%;
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.5;
+	}
+
+	h2{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.25;
+	}
+
+	p{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.5;
+	}
+
+	h4{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.25;
+
+	a
+		{font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size:1em;
+		line-height:1.25;
+		padding-bottom:2%;
+		color:black;
+		}
+
+		a:hover{
+		color:$grey;
+	}
+}
+
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
 }
 
 .inspiration {
@@ -355,8 +480,25 @@ nav li {
     }
 }
 
+.reccomendation{
+	background-color:$green;
+	padding-top:15%;
+	padding-bottom:10%;
+	padding-left:12%;
+	padding-right:12%;
+
+	a{
+   		padding-bottom:15%;
+   	}
+
+   	img{
+	padding-top:10%;
+}
+}
+
 //**Footer**//
 
+<<<<<<< HEAD
 .bottomnav {
     padding-top: 8%;
     padding-bottom: 4%;
@@ -415,3 +557,110 @@ div .CandB {
 .WatI {
     padding-bottom: 10%;
 }
+=======
+.bottomnav{
+	padding-top:8%;
+	padding-bottom:8%;
+	padding-left:8%;
+	padding-right:15%;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height:1.5;
+	font-size:1em;
+
+	h3{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	line-height:1.5;
+	font-size:1.5em;
+	}
+
+	p{
+		padding-right:10%;
+		padding-top:4%;
+		padding-bottom:4%;
+	}
+
+	a{
+		color:black;
+	}
+
+	a:hover{
+		color:$grey;
+	}
+}
+
+div .CandB, .NH, .IS, .TisI, .WatI {
+	background:$green;
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:10%;
+	padding-right:15%;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height:1.2;
+	font-size:1em;
+
+	h4{
+		color:black;
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		line-height:1.2;
+		font-size:1em;
+		text-decoration: none;
+			}
+
+		h4:hover{
+		color:$grey;
+			}
+
+	ul{
+		display:none;
+	}
+
+	li{
+		padding-right:10%;
+	}
+
+		a{
+		color:black;
+		text-decoration: none;
+			}
+
+		a:hover{
+		color:$grey;
+			}
+
+		}
+
+	.bottom{
+		padding:10%;
+	}
+
+	@media screen and (min-width: 38em) {
+		
+		.slogan{
+			margin-left:5.5%;
+		}
+
+		.search{
+			max-width:55px;
+			max-height:55px;
+		}
+
+	}
+
+	@media screen and (min-width: 60em) {
+		
+		.slogan{
+			margin-left:6.5%;
+		}
+
+	}
+
+
+>>>>>>> 9da49930635b9c20779599f007f416fedd4a3b19
