@@ -64,7 +64,7 @@ input, select {
   vertical-align: middle; }
 
 html {
-  background-color: #F6F3F7; }
+  background-color: white; }
 
 h1 {
   font-family: "futura-pt", sans-serif;
@@ -72,9 +72,6 @@ h1 {
   font-size: 2em;
   line-height: 1.25;
   padding-bottom: 3%; }
-
-html {
-  background-color: white; }
 
 h2 {
   font-family: "futura-pt",sans-serif;
@@ -114,15 +111,26 @@ a {
 a:hover {
   color: #0A70B8; }
 
+img {
+  max-width: 100%;
+  padding-bottom: 6%; }
+
 .logo {
-  width: 150px;
+  max-width: 150px;
   margin-top: 5%;
-  margin-left: 5%; }
+  margin-left: 20px; }
+
+.search {
+  position: fixed;
+  margin-left: 80%;
+  top: 2.5%;
+  width: 10%;
+  height: 5%; }
 
 .slogan {
   color: #0A70B8;
   margin-top: 0;
-  margin-left: 6%;
+  margin-left: 40px;
   padding-bottom: 10%;
   line-height: 0.2; }
 
@@ -131,28 +139,33 @@ a:hover {
   clear: both;
   display: block; }
 
-.banner div {
-  background-color: #F6F3F7; }
-  .banner div img {
-    width: 15%;
-    margin: 0;
-    padding-bottom: 2%; }
-  .banner div a {
-    line-height: 1;
-    margin-left: 10%;
-    color: black; }
-  .banner div a:hover {
+.banner div a {
+  line-height: 1;
+  margin-left: 10%;
+  padding: 2%;
+  color: black; }
+.banner div p {
+  line-height: 1;
+  padding: 0;
+  margin-left: 10%; }
+
+.login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
+  float: none;
+  max-width: 20%;
+  margin-top: 2.5%;
+  margin-left: 15%; }
+  .login a, .needhelp a, .cart a, .wishlist a, .ikeafamily a, .email a {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 12%; }
+  .login a:hover, .needhelp a:hover, .cart a:hover, .wishlist a:hover, .ikeafamily a:hover, .email a:hover {
     color: #0A70B8; }
-  .banner div p {
-    line-height: 1;
-    padding-top: 2%;
-    padding-right: 15%;
-    margin-left: 2%;
-    float: right; }
-  .banner div.logo, .banner div.needhelp {
-    float: none; }
-  .banner div.logincartlist, .banner div.ikeafamily {
-    float: none; }
+
+li {
+  list-style: none; }
+
+.email {
+  padding-bottom: 5%; }
 
 nav li {
   float: none;
@@ -179,29 +192,6 @@ nav li {
     font-size: 18px;
     text-decoration: none;
     vertical-align: middle; }
-
-img {
-  max-width: 100%;
-  padding-bottom: 6%; }
-
-.logo {
-  max-width: 150px;
-  margin-top: 5%;
-  margin-left: 20px; }
-
-.search {
-  position: fixed;
-  margin-left: 80%;
-  top: 2.5%;
-  width: 10%;
-  height: 5%; }
-
-.slogan {
-  color: #0A70B8;
-  margin-top: 0;
-  margin-left: 40px;
-  padding-bottom: 10%;
-  line-height: 0.2; }
 
 .button:hover {
   border-top-color: #0A70B8;
@@ -236,8 +226,8 @@ img {
   text-decoration: none;
   vertical-align: middle; }
   .dropdown img {
-    float: left;
-    width: 15%; }
+    padding: 0%;
+    width: 25%; }
   .dropdown a {
     padding: 10%; }
 
@@ -252,7 +242,7 @@ img {
 
 .recall {
   float: none;
-  padding-top: 25%;
+  padding-top: 12%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
@@ -261,67 +251,6 @@ img {
   font-style: normal;
   font-weight: 300;
   font-size: 14px; }
-
-.top {
-  background-color: #BCC679;
-  padding-top: 10%;
-  padding-bottom: 2%;
-  padding-left: 12%;
-  padding-right: 12%; }
-  .top p {
-    padding-top: 5%;
-    line-height: 1.5; }
-  .top img {
-    width: 100%; }
-
-.toy, .family, .savings, .xcards {
-  padding-bottom: 8%; }
-  .toy img, .family img, .savings img, .xcards img {
-    width: 100%; }
-  .toy img:hover, .family img:hover, .savings img:hover, .xcards img:hover {
-    width: 101%;
-    border-top: 5pt white solid; }
-  .toy h2, .family h2, .savings h2, .xcards h2 {
-    margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 8%; }
-  .toy p, .family p, .savings p, .xcards p {
-    line-height: 1;
-    padding: 0;
-    margin-left: 10%; }
-
-.login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
-  float: none;
-  max-width: 20%;
-  margin-top: 2.5%;
-  margin-left: 15%; }
-  .login a, .needhelp a, .cart a, .wishlist a, .ikeafamily a, .email a {
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 12%; }
-  .login a:hover, .needhelp a:hover, .cart a:hover, .wishlist a:hover, .ikeafamily a:hover, .email a:hover {
-    color: #0A70B8; }
-
-li {
-  list-style: none; }
-
-.email {
-  padding-bottom: 5%; }
-
-.xcards {
-  width: 92%; }
-  .xcards div {
-    background-color: white; }
-
-.catalog {
-  background-color: #BCC679;
-  padding-top: 0;
-  padding-left: 15%;
-  padding-bottom: 10%; }
-  .catalog ul {
-    padding-left: 2%; }
-  .catalog li, .catalog li:hover {
-    color: #0A70B8; }
 
 .top {
   background-color: #BCC679; }
@@ -355,35 +284,25 @@ li {
     .top h4 a:hover {
       color: #0A70B8; }
 
+.catalog {
+  background-color: #BCC679;
+  padding-top: 0;
+  padding-left: 12%;
+  padding-bottom: 10%; }
+
 .inspiration {
   background-color: #F6F3F7;
   padding-top: 15%;
   padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
-  .inspiration img {
-    width: 100%;
-    padding-bottom: 3%; }
-  .inspiration img:hover {
-    width: 101%;
-    border-top: 5pt #F6F3F7 solid; }
 
 .PS2014 {
   background-color: #BCC679;
   padding-top: 15%;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
-  .PS2014 img {
-    width: 100%;
-    padding-bottom: 0%; }
-  .PS2014 img:hover {
-    width: 101%;
-    border-top: 5pt #BCC679 solid; }
-  .PS2014 h3 {
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400; }
 
 .nowatikea {
   background-color: #F6F3F7;
@@ -396,8 +315,6 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; }
-  .nowatikea img {
-    width: 100%; }
 
 .featured {
   background-color: #BCC679;
@@ -410,8 +327,6 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5; }
-  .featured img {
-    width: 100%; }
 
 .ideas {
   background-color: #F6F3F7;
@@ -419,8 +334,6 @@ li {
   padding-bottom: 15%;
   padding-left: 12%;
   padding-right: 12%; }
-  .ideas img {
-    width: 100%; }
 
 .reccomendation {
   background-color: #BCC679;
@@ -432,53 +345,6 @@ li {
     padding-bottom: 15%; }
   .reccomendation img {
     padding-top: 10%; }
-
-.bottomnav {
-  padding-top: 8%;
-  padding-bottom: 4%;
-  padding-left: 8%;
-  padding-right: 15%;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5; }
-  .bottomnav h3 {
-    font-size: 1.5em; }
-  .bottomnav p {
-    padding-right: 10%;
-    padding-top: 4%;
-    padding-bottom: 4%; }
-  .bottomnav a {
-    color: black; }
-  .bottomnav a:hover {
-    color: #0A70B8; }
-
-div .CandB, .NH, .IS, .TisI, .WatI {
-  background-color: #BCC679;
-  padding-top: 4%;
-  padding-bottom: 1%;
-  padding-left: 10%;
-  padding-right: 15%;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.2;
-  font-size: 1em; }
-  div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
-    display: none; }
-  div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
-    padding-right: 10%; }
-  div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
-    color: black;
-    text-decoration: none; }
-  div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
-    color: white; }
-
-div .CandB {
-  padding-top: 10%; }
-
-.WatI {
-  padding-bottom: 10%; }
 
 .bottomnav {
   padding-top: 8%;
@@ -524,6 +390,8 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     line-height: 1.2;
     font-size: 1em;
     text-decoration: none; }
+  div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
+    color: #0A70B8; }
   div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
     display: none; }
   div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
@@ -531,6 +399,8 @@ div .CandB, .NH, .IS, .TisI, .WatI {
   div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
     color: black;
     text-decoration: none; }
+  div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+    color: #0A70B8; }
 
 .bottom {
   padding: 10%; }

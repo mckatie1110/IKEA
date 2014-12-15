@@ -6,18 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="stylesheets/style.css" type="text/css" rel="stylesheet">
 		<script src="//use.typekit.net/rel6fjj.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
+<script>try{Typekit.load();}catch(e){}</script>
+		<script src="js/jquery.js"></script>
 	</head>
 	<body>
-		<div class="logo"><a href="index.html"><img src="images/IKEA.png"></a></div>
 		<div class="banner">
+			<div class="logo"><a href="index.html"><img src="images/IKEA.png"></a><img src="images/search.png" class="search"></div><div class="searchbar"></div>
 			<p class="slogan">A better everyday life at home</p>
-			<div class="needhelp"><a href="#"><img src="images/help.png"><p>How can we help you?</p></a></div>
-			<div class="login"><a href="#"><img src="images/login.png"><p>Log in</p></a></div>
-			<div class="cart"><a href="#"><img src="images/shoppingcart.png"><p>My Shopping Cart</p></a></div>
-			<div class="wishlist"><a href="#"><img src="images/wishlist.png"><p>My Wishlist</p></a></div>
-			<div class="ikeafamily"><a href="#"><img src="images/users.png"><p>Join IKEA Family</p></a></div>
-			<div class="email"><a href="#"><img src="images/email.png"><p>Join our email list</p></a></div>
+			<ul>
+				<li><div class="needhelp"><id="one"><img src="images/help.png"><a href="#">How can we help you?</a></li></div>
+				<li><div class="login"><id="two"><img src="images/login.png"><a href="#">Log in</a></li></div>	
+				<li><div class="cart"><id="three"><img src="images/shoppingcart.png"><a href="#">My Shopping Cart</a></li></div>
+				<li><div class="wishlist"><id="three"><img src="images/wishlist.png"><a href="#">My Wishlist</a></li></div>
+				<li><div class="ikeafamily"><id="four"><img src="images/users.png"><a href="#">Join IKEA Family</a></li></div>
+				<li><div class="email"><id="five"><img src="images/email.png"><a href="#">Join our email list</a></li></div>
+			</ul>
 		</div>
 		<nav>
 			<ul>
@@ -30,12 +33,11 @@
 				<li class="button"><a href="children.html">Children's IKEA</a></li>
 				<li class="button"><a href="textiles.html">Textiles and Rugs</a></li>
 				<li class="button"><a href="office.html">Office</a></li>
-				<li class="dropdown"><a href="#"><img src="images/departments.png">Departments</a></li>
+				<li class="dropdown"><img src="images/departments.png"><a href="#">Departments</a></li>
 			</ul>
 		</nav>
 		<div class="recall">
-
-			<h5>PLEASE NOTE: <a href="#">Product Recall of shaped pasta,</a><a href="#"> children's swing, </a><a href="#"> children's mounted wall lighting,</a><a href="#"> children's bed canopies, </a><a href="#"> KRITTER and SNIGLAR bed frame</a></h5>
+		<h5>PLEASE NOTE:<br><a href="#">Product Recall of shaped pasta,</a><a href="#"> children's swing, </a><a href="#"> children's mounted wall lighting,</a><a href="#"> children's bed canopies, </a><a href="#"> KRITTER and SNIGLAR bed frame</a></h5>
 		</div>
 		<div class="top">
 			<h1>Welcome to IKEA!</h1>
@@ -47,16 +49,12 @@
 			<h2>UNICEF Holiday Cards Send A Message of Hope</h2>
 			<p>When you send UNICEF Holiday greeting cards, you help bring hope, health and happiness to children around the world.<br>Know that 100% of the proceeds from the sales of these cards goes to US Fund for UNICEF.</p>
 
+		</div>
 
-		</div>
-		<div class="savings">
-			<a href="#"><img src="images/savings.png"></a>
-		</div>
-		<div class="toy">
-			<a href="#"><img src="images/EducationToy.png">
-			<h2>Every soft toy you buy = $1 donated to education</h2></a>
-		</div>
 		<footer>
+			<div class="bottomnav">
+			<h3>All Departments</h3>
+			<a href="bedroom.html"><p>Bedroom</p></a><a href="bathroom.html"><p>Bathroom</p></a><a href="livingroom.html"><p>Living Room</p></a><a href="kitchen.html"><p>Kitchen and Appliances</p></a><a href="children.html"><p>Children's IKEA</p></a><a href="textiles.html"><p>Textiles and Rugs</p></a><a href="office.html"><p>Office</p></a></div>
 			<div class="bottomlinks">
 				<div class="CandB">
 				<a href="#"><h4>IKEA Catalog and Brochures</h4></a>
@@ -64,7 +62,7 @@
 						<li><a href="#">Request</a></li>
 						<li><a href="#">View</a></li>
 					</ul>
-				</div>
+					</div>
 				<div class="NH">
 				<a href="#"><h4>Need Help?</h4></a>
 					<ul>
@@ -76,34 +74,39 @@
 						<li><a href="#">Buying Guides</a></li>
 						<li><a href="#">Delivery Terms and Conditions</a></li></div>
 					</ul>
-					<div class="IS">
-						<h4><a href="#">The IKEA Store</a></h4>
-						<ul>
-							<li><a href="#">IKEA Food and Restaurant</a></li>
-							<li><a href="#">IKEA Business</a></li>
-							<li><a href="#">IKEA Gift Card</a></li></div>
-						</ul>
-						<div class="TisI">
-							<h4><a href="#">This is IKEA</a></h4>
-							<ul>
-								<li><a href="#">The IKEA Concept</a></li>
-								<li><a href="#">Democratic Design</a></li>
-								<li><a href="#">About the IKEA Group</a></li>
-								<li><a href="#">People and Planet</a></li>
-								<li><a href="#">Press Room</a></li>
-								<li><a href="#">Read our Materials</a></li>
-								<li><a href="#">IKEA Foundation</a></li></div>
-							</ul>
-							
-							<div class="WatI">
-								<h4><a href="#">Working at the IKEA Group</a></h4>
-								<ul>
-									<li><a href="#">Search Careers</a></li></div>
-								</ul>
-							</div>
-							<div class="bottomnav">
-								<a href="#"><h3>All Departments</h3></a>
-								<a href="bedroom.html"><p>Bedroom</p></a><a href="bathroom.html"><p>Bathroom</p></a><a href="livingroom.html"><p>Living Room</p></a><a href="kitchen.html"><p>Kitchen and Appliances</p></a><a href="children.html"><p>Children's IKEA</p></a><a href="textiles.html"><p>Textiles and Rugs</p></a><a href="office.html"><p>Office</p></a></div>
-							</footer>
+				<div class="IS">
+				<a href="#"><h4>The IKEA Store</h4></a>
+					<ul>
+						<li><a href="#">Find an IKEA Store</a></li>
+						<li><a href="#">IKEA Food and Restaurant</a></li>
+						<li><a href="#">IKEA Business</a></li>
+						<li><a href="#">IKEA Gift Card</a></li></div>
+					</ul>
+				<div class="TisI">
+				<a href="#"><h4>This is IKEA</h4></a>
+					<ul>
+						<li><a href="#">The IKEA Concept</a></li>
+						<li><a href="#">Democratic Design</a></li>
+						<li><a href="#">About the IKEA Group</a></li>
+						<li><a href="#">People and Planet</a></li>
+						<li><a href="#">Press Room</a></li>
+						<li><a href="#">Read our Materials</a></li>
+						<li><a href="#">IKEA Foundation</a></li></div>
+					</ul>
+				
+				<div class="WatI">
+				<a href="#"><h4>Working at the IKEA Group</h4></a>
+					<ul>
+						<li><a href="#">Search Careers</a></li></div>
+					</ul>
+			</div>
+		</footer>
+		<div class="bottom"></div>
+
 	</body>
 </html>
+		
+		
+
+
+

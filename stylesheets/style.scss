@@ -1,653 +1,479 @@
-@import "reset";
+@import 'reset';
 
-$background: #F6F3F7;
-$grey: #0A70B8;
-$green: #BCC679;
+$background:#F6F3F7;
+$grey:#0A70B8;
+$green:#BCC679;
 
-html {
-    background-color: $background;
-}
-
-
-h1 {
-    font-family: "futura-pt", sans-serif;
-    color: black;
-    font-size: 2em;
-    line-height: 1.25;
-    padding-bottom: 3%;
-
-}
 
 html{
-	background-color:white;
+    background-color:white;
+}
+
+h1{
+    font-family: "futura-pt", sans-serif;
+    color: black;
+    font-size:2em;
+    line-height:1.25;
+    padding-bottom:3%;
 
 }
 
-h2 {
+h2{
     font-family: "futura-pt",sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size: 1.5em;
-    line-height: 1.25;
-    padding-bottom: 8%;
-    color: $grey;
+    font-size:1.5em;
+    line-height:1.25;
+    padding-bottom:8%;
+    color:$grey;
 }
 
-h4 {
+h4{
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.25em;
-    line-height: 1.25;
-    padding-bottom: 2%;
-    color: black;
+    font-size:1.25em;
+    line-height:1.25;
+    padding-bottom:2%;
+    color:black;
 }
 
-p {
+p{
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.15;
-    font-size: 1.1em;
-    padding-bottom: 10%;
+    line-height:1.15;
+    font-size:1.1em;
+    padding-bottom:10%;
 }
 
-a {
+
+a{
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.45;
-    font-size: 1.15em;
-    text-decoration: none;
-    color: black;
+    line-height:1.45;
+    font-size:1.15em;
+    text-decoration:none;
+    color:black;
 }
 
-a:hover {
-    color: $grey;
+a:hover{
+    color:$grey;
 }
 
-.logo {
-    width: 150px;
-    margin-top: 5%;
-    margin-left: 5%;
+img{
+    max-width:100%;
+    padding-bottom:6%;
 }
 
-.slogan {
-    color: $grey;
-    margin-top: 0;
-    margin-left: 6%;
-    padding-bottom: 10%;
-    line-height: 0.2;
+.logo{
+    max-width:150px;
+    margin-top:5%;
+    margin-left:20px;
 }
+
+.search{
+        position:fixed;
+        margin-left:80%;
+        top:2.5%;
+        width:10%;
+        height:5%;
+
+    }
+
+
+.slogan{
+        color:$grey;
+        margin-top:0;
+        margin-left:40px;
+        padding-bottom:10%;
+        line-height:0.2;
+}
+
 
 .banner::after {
-    content: "";
-    clear: both;
-    display: block;
+content: "";
+clear: both;
+display: block;
 }
 
+.banner div{
 
-.banner div {
-    background-color: $background;
-    img {
-        width: 15%;
-        margin: 0;
-        padding-bottom: 2%;
-    }
-    a {
+    a{
         line-height: 1;
-        margin-left: 10%;
-        color: black;
+        margin-left:10%;
+        padding:2%;
+        color:black;
+
     }
-    a:hover {
-        color: $grey;
-    }
-    p {
+
+    p{
         line-height: 1;
-        padding-top: 2%;
-        padding-right: 15%;
-        margin-left: 2%;
-        float: right;
-    }
-    &.logo, &.needhelp {
-        float: none;
-    }
-    &.logincartlist, &.ikeafamily {
-        float: none;
+        padding:0;
+        margin-left:10%;
     }
 }
 
-nav li {
-    float: none;
+    .login, .needhelp, .cart, .wishlist, .ikeafamily, .email{
+        float:none;
+        max-width:20%;
+        margin-top:2.5%;
+        margin-left:15%;
+
+
+        a{
+            position:absolute;
+            margin-top: 5%;
+            margin-left:12%;
+        }
+
+        a:hover{
+            color:$grey;
+            }       
+
+    }
+
+
+    li{
+        list-style: none;
+    }
+
+.email{
+    padding-bottom:5%;
+}
+
+
+nav li{
+    float:none;
     list-style-type: none;
 }
 
 .button {
-    border-top: 0px;
-    border-bottom: 0px;
-    background: $background;
-    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-    background: -webkit-linear-gradient(top, $background, #bcc679);
-    background: -moz-linear-gradient(top, $background, #bcc679);
-    background: -ms-linear-gradient(top, $background, #bcc679);
-    background: -o-linear-gradient(top, $background, #bcc679);
-    padding: 9.5px 19px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    color: #000000;
-    a {
+   border-top: 0px;
+   border-bottom: 0px;
+   background: $background;
+   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+   background: -webkit-linear-gradient(top, $background, #bcc679);
+   background: -moz-linear-gradient(top, $background, #bcc679);
+   background: -ms-linear-gradient(top, $background, #bcc679);
+   background: -o-linear-gradient(top, $background, #bcc679);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   color: #000000;
+        
+        a{
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+
+   }
+.button:hover {
+   border-top-color: $grey;
+   background: $grey;
+   color: $background;
+
+    a, a:hover{
+    color:white;
+   }
+  }
+
+.button:active {
+   border-top-color: $grey;
+   background: $grey;
+   }
+
+ .dropdown{
+   float:right;
+   border-top: 0px;
+   border-bottom: 0px;
+   background: $background;
+   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+   background: -webkit-linear-gradient(top, $background, #bcc679);
+   background: -moz-linear-gradient(top, $background, #bcc679);
+   background: -ms-linear-gradient(top, $background, #bcc679);
+   background: -o-linear-gradient(top, $background, #bcc679);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   color: #000000;
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        text-decoration: none;
-        vertical-align: middle;
+   text-decoration: none;
+   vertical-align: middle;
+
+    img{
+        padding:0%;
+        width:25%;
     }
-}
 
-img{
-	max-width:100%;
-	padding-bottom:6%;
-}
-
-.logo{
-	max-width:150px;
-	margin-top:5%;
-	margin-left:20px;
-}
-
-.search{
-		position:fixed;
-		margin-left:80%;
-		top:2.5%;
-		width:10%;
-		height:5%;
-
-	}
-
-
-.slogan{
-		color:$grey;
-		margin-top:0;
-		margin-left:40px;
-		padding-bottom:10%;
-		line-height:0.2;
-
-}
-
+    a{
+        padding:10%;
+    }
+   }
 .button:hover {
-    border-top-color: $grey;
-    background: $grey;
-    color: $background;
-    a, a:hover {
-        color: white;
-    }
-}
-
+   border-top-color: $grey;
+   background: $grey;
+   color: $background;
+   }
 .button:active {
-    border-top-color: $grey;
-    background: $grey;
-}
+   border-top-color: $grey;
+   background: $grey;
+   }
+   
 
-
-.dropdown {
-    float: right;
-    border-top: 0px;
-    border-bottom: 0px;
-    background: $background;
-    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-    background: -webkit-linear-gradient(top, $background, #bcc679);
-    background: -moz-linear-gradient(top, $background, #bcc679);
-    background: -ms-linear-gradient(top, $background, #bcc679);
-    background: -o-linear-gradient(top, $background, #bcc679);
-    padding: 9.5px 19px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    color: #000000;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    vertical-align: middle;
-    img {
-        float: left;
-        width: 15%;
-    }
-    a {
-        padding: 10%;
-    }
-}
-
-.button:hover {
-    border-top-color: $grey;
-    background: $grey;
-    color: $background;
-}
-
-.button:active {
-    border-top-color: $grey;
-    background: $grey;
-}
-
-
-.recall {
-    float: none;
-    padding-top: 25%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #000000;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-}
-
-.top {
-    background-color: $green;
-    padding-top: 10%;
-    padding-bottom: 2%;
-    padding-left: 12%;
-    padding-right: 12%;
-    p {
-    	padding-top: 5%;
-        line-height: 1.5;
-    }
-    img {
-        width: 100%;
-    }
-}
-
-.toy, .family, .savings, .xcards {
-    padding-bottom: 8%;
-    img {
-        width: 100%;
-    }
-
-    img:hover{
-    	width: 101%;
-    	border-top:5pt white solid;
-    }
-
-    h2 {
-        margin-top: 2%;
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-
-	p{
-		line-height: 1;
-		padding:0;
-		margin-left:10%;
-	}
-}
-
-	.login, .needhelp, .cart, .wishlist, .ikeafamily, .email{
-		float:none;
-		max-width:20%;
-		margin-top:2.5%;
-		margin-left:15%;
-
-
-		a{
-			position:absolute;
-			margin-top: 5%;
-			margin-left:12%;
-		}
-
-		a:hover{
-			color:$grey;
-			}		
-
-	}
-
-
-	li{
-		list-style: none;
-	}
-
-.email{
-	padding-bottom:5%;
-
-}
-
-.xcards {
-    width: 92%;
-
-    div{
-    	background-color:white;
-    }
-}
-
-//**Bedroom**//
-
-.catalog {
-    background-color: $green;
-    padding-top: 0;
-    padding-left: 15%;
-    padding-bottom: 10%;
-
-    ul{
-    	padding-left:2%;
-    }
-
-
-    li, li:hover{
-    	color:$grey;
-    }
+.recall{
+    float:none;
+    padding-top:12%;
+    padding-bottom:5%;
+    padding-left:5%;
+    padding-right:5%;
+       color: #000000;
+        font-family:sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
 }
 
 .top{
 background-color:$green;
 
 
-	img{
-		max-width:100%;
-	}
-	
-	h1{
-		padding-top:10%;
-		padding-left:12%;
-		padding-right:12%;
-		line-height:1.5;
-	}
-
-	h2{
-		padding-left:12%;
-		padding-right:12%;
-		line-height:1.25;
-	}
-
-	p{
-		padding-left:12%;
-		padding-right:12%;
-		line-height:1.5;
-	}
-
-	h4{
-		padding-left:12%;
-		padding-right:12%;
-		line-height:1.25;
-
-	a
-		{font-family: "futura-pt",sans-serif;
-		font-style: normal;
-		font-weight: 600;
-		font-size:1em;
-		line-height:1.25;
-		padding-bottom:2%;
-		color:black;
-		}
-
-		a:hover{
-		color:$grey;
-	}
-}
-
-}
-
-.inspiration {
-    background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 12%;
-    padding-right: 12%;
-
     img{
-    	width:100%;
-    	padding-bottom:3%;
+        max-width:100%;
     }
-
-      img:hover{
-    	width: 101%;
-    	border-top:5pt $background solid;
-    }
-}
-
-.PS2014 {
-    background-color: $green;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    padding-left: 12%;
-    padding-right: 12%;
-
-    img{
-    	width:100%;
-     	padding-bottom:0%;
-    }
-
-      img:hover{
-    	width: 101%;
-    	border-top:5pt $green solid;
-    }
-
-    h3{
-        font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 400;
-    }
-}
-
-.nowatikea {
-    background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 12%;
-    padding-right: 12%;
     
-    p {
-        font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
+    h1{
+        padding-top:10%;
+        padding-left:12%;
+        padding-right:12%;
+        line-height:1.5;
     }
 
-    img{
-    	width:100%;
+    h2{
+        padding-left:12%;
+        padding-right:12%;
+        line-height:1.25;
+    }
+
+    p{
+        padding-left:12%;
+        padding-right:12%;
+        line-height:1.5;
+    }
+
+    h4{
+        padding-left:12%;
+        padding-right:12%;
+        line-height:1.25;
+
+    a
+        {font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size:1em;
+        line-height:1.25;
+        padding-bottom:2%;
+        color:black;
+        }
+
+        a:hover{
+        color:$grey;
     }
 }
 
-.featured {
-    background-color: $green;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 12%;
-    padding-right: 12%;
-    p {
-        font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-    }
-
-    img{
-    	width:100%;
-    }
 }
 
-.ideas {
-    background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 12%;
-    padding-right: 12%;
+.catalog{
+    background-color:$green;
+    padding-top:0;
+    padding-left:12%;
+    padding-bottom:10%;
+}
 
-    img{
-    	width:100%;
-    }
+.inspiration{
+    background-color:$background;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:12%;
+    padding-right:12%;
+}
+
+.PS2014{
+    background-color:$green;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:12%;
+    padding-right:12%;
+}
+
+.nowatikea{
+    background-color:$background;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:12%;
+    padding-right:12%;
+        p{
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+}
+
+.featured{
+    background-color:$green;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:12%;
+    padding-right:12%;
+
+    p{
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+}
+
+.ideas{
+    background-color:$background;
+    padding-top:15%;
+    padding-bottom:15%;
+    padding-left:12%;
+    padding-right:12%;
 }
 
 .reccomendation{
-	background-color:$green;
-	padding-top:15%;
-	padding-bottom:10%;
-	padding-left:12%;
-	padding-right:12%;
+    background-color:$green;
+    padding-top:15%;
+    padding-bottom:10%;
+    padding-left:12%;
+    padding-right:12%;
 
-	a{
-   		padding-bottom:15%;
-   	}
+    a{
+        padding-bottom:15%;
+    }
 
-   	img{
-	padding-top:10%;
+    img{
+    padding-top:10%;
 }
 }
 
 //**Footer**//
 
-
-.bottomnav {
-    padding-top: 8%;
-    padding-bottom: 4%;
-    padding-left: 8%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    h3 {
-        font-size: 1.5em;
-    }
-    p {
-        padding-right: 10%;
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
-    a {
-        color: black;
-    }
-    a:hover {
-        color: $grey;
-    }
-}
-
-div .CandB, .NH, .IS, .TisI, .WatI {
-    background-color: $green;
-    padding-top: 4%;
-    padding-bottom: 1%;
-    padding-left: 10%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 1em;
-    ul {
-        display: none;
-    }
-    li {
-        padding-right: 10%;
-    }
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    a:hover {
-        color: white;
-    }
-}
-
-div .CandB {
-    padding-top: 10%;
-}
-
-.WatI {
-    padding-bottom: 10%;
-}
-
 .bottomnav{
-	padding-top:8%;
-	padding-bottom:8%;
-	padding-left:8%;
-	padding-right:15%;
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.5;
-	font-size:1em;
+    padding-top:8%;
+    padding-bottom:8%;
+    padding-left:8%;
+    padding-right:15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.5;
+    font-size:1em;
 
-	h3{
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 600;
-	line-height:1.5;
-	font-size:1.5em;
-	}
+    h3{
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height:1.5;
+    font-size:1.5em;
+    }
 
-	p{
-		padding-right:10%;
-		padding-top:4%;
-		padding-bottom:4%;
-	}
+    p{
+        padding-right:10%;
+        padding-top:4%;
+        padding-bottom:4%;
+    }
 
-	a{
-		color:black;
-	}
+    a{
+        color:black;
+    }
 
-	a:hover{
-		color:$grey;
-	}
+    a:hover{
+        color:$grey;
+    }
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-	background:$green;
-	padding-top:5%;
-	padding-bottom:5%;
-	padding-left:10%;
-	padding-right:15%;
-	font-family: "futura-pt",sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	line-height:1.2;
-	font-size:1em;
+    background:$green;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:10%;
+    padding-right:15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height:1.2;
+    font-size:1em;
 
-	h4{
-		color:black;
-		font-family: "futura-pt",sans-serif;
-		font-style: normal;
-		font-weight: 600;
-		line-height:1.2;
-		font-size:1em;
-		text-decoration: none;
-			}
+    h4{
+        color:black;
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height:1.2;
+        font-size:1em;
+        text-decoration: none;
+            }
 
-	ul{
-		display:none;
-	}
+        h4:hover{
+        color:$grey;
+            }
 
-	li{
-		padding-right:10%;
-	}
+    ul{
+        display:none;
+    }
 
-		a{
-		color:black;
-		text-decoration: none;
-			}
+    li{
+        padding-right:10%;
+    }
+
+        a{
+        color:black;
+        text-decoration: none;
+            }
+
+        a:hover{
+        color:$grey;
+            }
+
         }
 
-	.bottom{
-		padding:10%;
-	}
-
-	@media screen and (min-width: 38em) {
-		
-		.slogan{
-			margin-left:5.5%;
-		}
-
-		.search{
-			max-width:55px;
-			max-height:55px;
-		}
-
-}
-
-	@media screen and (min-width: 60em) {
-		
-		.slogan{
-			margin-left:6.5%;
-		}
+    .bottom{
+        padding:10%;
     }
+
+    @media screen and (min-width: 38em) {
+        
+        .slogan{
+            margin-left:5.5%;
+        }
+
+        .search{
+            max-width:55px;
+            max-height:55px;
+        }
+
+    }
+
+    @media screen and (min-width: 60em) {
+        
+        .slogan{
+            margin-left:6.5%;
+        }
+
+    }
+
+
