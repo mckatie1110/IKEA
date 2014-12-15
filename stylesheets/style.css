@@ -112,26 +112,25 @@ a:hover {
   color: #0A70B8; }
 
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   padding-bottom: 6%; }
 
 .logo {
-  width: 150px;
+  max-width: 150px;
   margin-top: 5%;
-  margin-left: 5%; }
+  margin-left: 20px; }
 
 .search {
   position: fixed;
   margin-left: 80%;
   top: 2.5%;
-  width: 10%;
+  max-width: 45px;
   height: 5%; }
 
 .slogan {
   color: #0A70B8;
   margin-top: 0;
-  margin-left: 10%;
+  margin-left: 40px;
   padding-bottom: 10%;
   line-height: 0.2; }
 
@@ -152,7 +151,7 @@ img {
 
 .login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
   float: none;
-  width: 20%;
+  max-width: 50px;
   margin-top: 2.5%;
   margin-left: 15%; }
   .login a, .needhelp a, .cart a, .wishlist a, .ikeafamily a, .email a {
@@ -190,7 +189,7 @@ nav li {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125em;
     text-decoration: none;
     vertical-align: middle; }
 
@@ -223,14 +222,16 @@ nav li {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125em;
   text-decoration: none;
   vertical-align: middle; }
   .dropdown img {
-    padding: 0%;
-    width: 25%; }
+    float:left;
+    padding-left: 25%;
+    max-width: 40px; }
   .dropdown a {
-    padding: 10%; }
+    float:left;
+    padding-left: 5%; }
 
 .button:hover {
   border-top-color: #0A70B8;
@@ -246,17 +247,17 @@ nav li {
   padding-top: 12%;
   padding-bottom: 5%;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 50%;
   color: #000000;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px; }
+  font-size: 0.875em; }
 
 .top {
   background-color: #BCC679; }
   .top img {
-    width: 100%; }
+    max-width: 100%; }
   .top h1 {
     padding-top: 10%;
     padding-left: 12%;
@@ -405,5 +406,116 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 
 .bottom {
   padding: 10%; }
+
+@media screen and (min-width: 30em) {
+  .slogan {
+    margin-left: 38px; }
+
+  .search {
+    max-width: 45px;} 
+
+      .needhelp{
+      float:left;
+      max-width: 50px;
+      margin-top: 10px;
+      margin-left: 40px;
+
+  }
+
+li .login, .cart, .wishlist{
+  max-width: 50px;
+  margin-top: 10px;
+  margin-left: 40px;
+ 
+}
+
+a .login, .cart, .wishlist{
+      margin-top:10px;
+      margin-left:40px;
+      font-size: 1em;
+       }
+
+      
+       .ikeafamily {
+          max-width: 50px;
+          margin-top: 10px;
+          margin-left: 40px;
+       }
+
+       .email{
+          max-width: 60px;
+          margin-top: 10px;
+          margin-left: 40px;
+       }
+
+
+  }/**media close**/
+
+
+@media screen and (min-width: 73em) {
+
+
+  .slogan {
+    margin-left: 38px; } 
+
+  .search {
+      max-width: 45px; } 
+
+
+ #one{
+      float:left;
+      margin-top: 10px;
+      margin-left: 40px;
+
+        a{
+          padding:0;
+          margin:0;
+        }
+
+  }
+
+  #two{
+     float:none;
+      max-width: 50px;
+      margin-top: 10px;
+      margin-left: 40px;
+  }
+
+  #three{
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+
+       }
+
+ #four {
+    float:none;
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+ }
+
+#five{
+    float: none;
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+ }
+
+       .button{
+        float:left;
+        padding:15px;
+        margin:0;
+      }
+
+.recall{
+  padding-top:70px;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:12px;
+
+}
+
+  }/**media close**/
 
 /*# sourceMappingURL=style.css.map */
