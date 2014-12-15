@@ -6,7 +6,7 @@ $green:#BCC679;
 
 
 html{
-	background-color:$background;
+	background-color:white;
 }
 
 h1{
@@ -74,6 +74,16 @@ img{
 	margin-left:5%;
 }
 
+.search{
+		position:fixed;
+		margin-left:80%;
+		top:2.5%;
+		width:10%;
+		height:5%;
+
+	}
+
+
 .slogan{
 		color:$grey;
 		margin-top:0;
@@ -90,7 +100,6 @@ display: block;
 }
 
 .banner div{
-	background-color:$background;
 
 	a{
 		line-height: 1;
@@ -105,14 +114,34 @@ display: block;
 		padding:0;
 		margin-left:10%;
 	}
+}
 
-	&.logo, &.needhelp{
+	.login, .needhelp, .cart, .wishlist, .ikeafamily, .email{
 		float:none;
+		width:20%;
+		margin-top:2.5%;
+		margin-left:15%;
+
+
+		a{
+			position:absolute;
+			margin-top: 5%;
+			margin-left:12%;
+		}
+
+		a:hover{
+			color:$grey;
+			}		
+
 	}
 
-	&.logincartlist, &.ikeafamily{
-		float:none;
+
+	li{
+		list-style: none;
 	}
+
+.email{
+	padding-bottom:5%;
 }
 
 
@@ -219,14 +248,51 @@ nav li{
 
 .top{
 background-color:$green;
-padding-top:15%;
-padding-bottom:5%;
-padding-left:12%;
-padding-right:12%;
+
+
+	img{
+		width:100%;
+	}
 	
-	p{
+	h1{
+		padding-top:10%;
+		padding-left:12%;
+		padding-right:12%;
 		line-height:1.5;
 	}
+
+	h2{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.25;
+	}
+
+	p{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.5;
+	}
+
+	h4{
+		padding-left:12%;
+		padding-right:12%;
+		line-height:1.25;
+
+	a
+		{font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size:1em;
+		line-height:1.25;
+		padding-bottom:2%;
+		color:black;
+		}
+
+		a:hover{
+		color:$grey;
+	}
+}
+
 }
 
 .catalog{
@@ -289,6 +355,22 @@ padding-right:12%;
 	padding-right:12%;
 }
 
+.reccomendation{
+	background-color:$green;
+	padding-top:15%;
+	padding-bottom:10%;
+	padding-left:12%;
+	padding-right:12%;
+
+	a{
+   		padding-bottom:15%;
+   	}
+
+   	img{
+	padding-top:10%;
+}
+}
+
 //**Footer**//
 
 .bottomnav{
@@ -301,6 +383,14 @@ padding-right:12%;
 	font-weight: 400;
 	line-height:1.5;
 	font-size:1em;
+
+	h3{
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	line-height:1.5;
+	font-size:1.5em;
+	}
 
 	p{
 		padding-right:10%;
@@ -318,8 +408,9 @@ padding-right:12%;
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-	padding-top:1%;
-	padding-bottom:1%;
+	background:$green;
+	padding-top:5%;
+	padding-bottom:5%;
 	padding-left:10%;
 	padding-right:15%;
 	font-family: "futura-pt",sans-serif;
@@ -328,6 +419,20 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 	line-height:1.2;
 	font-size:1em;
 
+	h4{
+		color:black;
+		font-family: "futura-pt",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		line-height:1.2;
+		font-size:1em;
+		text-decoration: none;
+			}
+
+		h4:hover{
+		color:$grey;
+			}
+
 	ul{
 		display:none;
 	}
@@ -335,7 +440,6 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 	li{
 		padding-right:10%;
 	}
-
 
 		a{
 		color:black;
@@ -346,5 +450,10 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 		color:$grey;
 			}
 
+		}
 
-}
+	.bottom{
+		padding:10%;
+	}
+
+
