@@ -64,7 +64,7 @@ input, select {
   vertical-align: middle; }
 
 html {
-  background-color: white; }
+  background-color: #F6F3F7; }
 
 h1 {
   font-family: "futura-pt", sans-serif;
@@ -115,11 +115,13 @@ img {
   padding-bottom: 6%; }
 
 .logo {
-  max-width: 150px;
-  margin-top: 5%;
-  margin-left: 20px;
+  max-width: 50px;
+  margin-top: 20px;
+  margin-left: 24px;
   float: left;
   display: inline-block; }
+  .logo img {
+    width: 225%; }
 
 .magglass {
   margin-top: 20px;
@@ -131,13 +133,6 @@ input {
   float: right;
   margin-top: 20px; }
 
-.slogan {
-  color: #0A70B8;
-  margin-top: 0;
-  margin-left: 40px;
-  line-height: 0.2;
-  float: left; }
-
 .banner::after {
   content: "";
   clear: both;
@@ -148,41 +143,39 @@ input {
   margin-left: 10%;
   padding: 2%;
   color: black; }
-.banner p {
-  line-height: 1;
-  padding-bottom: 50px;
-  margin-left: 10%; }
+.banner .slogan {
+  color: #0A70B8;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-top: 10px;
+  line-height: 0.2;
+  float: left; }
 
-.login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
-  float: left;
-  overflow: hidden;
-  margin-left: 20px; }
-  .login img, .needhelp img, .cart img, .wishlist img, .ikeafamily img, .email img {
-    max-width: 50px;
-    margin-bottom: 0px;
-    float: left; }
-  .login a, .needhelp a, .cart a, .wishlist a, .ikeafamily a, .email a {
+.outer::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.outer {
+  width: 100%;
+  padding: 0, 5%, 0, 5%;
+  background-color: #F6F3F7; }
+  .outer div.icons {
     float: left;
-    padding: 0;
-    margin-bottom: 5px;
-    margin-left: 10px; }
-  .login a:hover, .needhelp a:hover, .cart a:hover, .wishlist a:hover, .ikeafamily a:hover, .email a:hover {
-    color: #0A70B8; }
-
-li {
-  list-style: none; }
-
-.login {
-  padding-top: 20px; }
-
-.wishlist img {
-  padding-left: 32px; }
-
-.needhelp {
-  margin-top: 20px; }
-
-.email {
-  padding-bottom: 5%; }
+    width: 100%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%; }
+    .outer div.icons img {
+      float: left;
+      width: 45%;
+      padding-right: 10px; }
+    .outer div.icons a {
+      float: left;
+      margin-left: 5%; }
+    .outer div.icons p {
+      margin-left: 5%;
+      font-size: 0.75em; }
 
 nav li {
   float: none;
@@ -301,7 +294,7 @@ nav li {
     .top h4 a:hover {
       color: #0A70B8; }
   .top .cardgif {
-    margin-left: 70px; }
+    margin-left: 20px; }
 
 .catalog {
   background-color: #BCC679;
@@ -365,6 +358,70 @@ nav li {
   .reccomendation img {
     padding-top: 10%; }
 
+.thestorytop {
+  background-color: #BCC679; }
+  .thestorytop img {
+    max-width: 100%; }
+  .thestorytop h1 {
+    padding-top: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.5; }
+  .thestorytop h2 {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.25; }
+  .thestorytop p {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.5; }
+  .thestorytop h4 {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.25; }
+    .thestorytop h4 a {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em;
+      line-height: 1.25;
+      padding-bottom: 2%;
+      color: black; }
+    .thestorytop h4 a:hover {
+      color: #0A70B8; }
+
+.thestorymiddle {
+  background-color: #F6F3F7; }
+  .thestorymiddle img {
+    max-width: 100%; }
+  .thestorymiddle h1 {
+    padding-top: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.5; }
+  .thestorymiddle h2 {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.25; }
+  .thestorymiddle p {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.5; }
+  .thestorymiddle h4 {
+    padding-left: 12%;
+    padding-right: 12%;
+    line-height: 1.25; }
+    .thestorymiddle h4 a {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em;
+      line-height: 1.25;
+      padding-bottom: 2%;
+      color: black; }
+    .thestorymiddle h4 a:hover {
+      color: #0A70B8; }
+
 .bottomnav {
   padding-top: 8%;
   padding-bottom: 8%;
@@ -383,8 +440,8 @@ nav li {
     font-size: 1.5em; }
   .bottomnav p {
     padding-right: 10%;
-    padding-top: 4%;
-    padding-bottom: 4%; }
+    padding-top: 8px;
+    padding-bottom: 8px; }
   .bottomnav a {
     color: black; }
   .bottomnav a:hover {
@@ -425,14 +482,21 @@ div .CandB, .NH, .IS, .TisI, .WatI {
   padding: 10%; }
 
 @media screen and (min-width: 38em) {
-  .banner p {
-    margin-left: 40px; }
-
-  .slogan {
-    float: left;
-    padding: 0;
-    margin-left: 0px;
-    margin-top: 5px; }
+  .banner a {
+    line-height: 1;
+    margin-left: 10%;
+    padding: 2%;
+    color: black; }
+  .banner img {
+    margin-left: 10px; }
+  .banner .slogan {
+    color: #0A70B8;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    margin-left: -30px;
+    padding-top: 10px;
+    line-height: 0.2;
+    float: left; }
 
   .magglass {
     float: right;
@@ -445,66 +509,227 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     margin-right: 0px;
     margin-bottom: 15px; }
 
-  .banner .login, .banner .needhelp, .banner .cart, .banner .wishlist, .banner .ikeafamily, .banner .email {
-    float: left;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: 40px;
-    width: 50%; }
-  .banner .wishlist {
-    padding: 0;
-    margin-left: 6px; }
-  .banner .email {
-    padding-bottom: 0; }
-
   .cardgif {
-    padding-left: 100px; } }
-@media screen and (min-width: 60em) {
+    margin-left: 80px; }
+
+  .bottomnav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1em; }
+    .bottomnav h3 {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1;
+      font-size: 1.5em; }
+    .bottomnav p {
+      padding-right: 10%;
+      padding-top: 2px;
+      padding-bottom: 15px; }
+    .bottomnav a {
+      text-decoration: none;
+      color: black; }
+    .bottomnav a:hover {
+      color: #0A70B8; }
+
+  div .CandB, .NH, .IS, .TisI, .WatI {
+    width: 100%;
+    background: #BCC679;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.5em;
+    text-decoration: none; }
+    div .CandB h4, .NH h4, .IS h4, .TisI h4, .WatI h4 {
+      color: black;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+      font-size: 1em;
+      padding-top: 10px; }
+      div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
+        color: #0A70B8; }
+    div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
+      display: inline-block;
+      width: 100%; }
+    div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
+      list-style-type: none;
+      float: left;
+      padding-right: 10px; }
+    div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
+      padding-bottom: 10px;
+      text-decoration: none;
+      color: black; }
+      div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+        color: #0A70B8; } }
+@media screen and (min-width: 38em) and (min-width: 60em) {
   .slogan {
     margin-top: 100px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    padding: 0; }
 
   .search {
     max-width: 40px; }
 
-  .banner .needhelp {
-    float: right;
-    margin-bottom: 20px;
-    margin-top: 260px; }
-    .banner .needhelp a {
-      margin-top: 20px; }
-  .banner .login {
-    float: right;
-    padding: 0;
-    margin-left: 140px;
-    margin-top: 20px; }
-  .banner .cart {
-    float: left;
-    padding: 0;
-    margin-top: 0px;
-    margin-left: 0px; }
-  .banner .wishlist {
-    float: left;
-    padding: 0;
-    margin-top: 0px;
-    margin-left: 0px; }
-  .banner .ikeafamily {
-    float: left;
-    margin-left: 120px;
-    margin-top: -170px; }
-  .banner .email {
-    float: left;
-    padding-top: 30px;
+  .recall {
+    margin-top: 50px;
     margin-left: 40px;
-    margin-top: -160px; }
-  .banner ul img {
-    padding: 0;
-    max-width: 80px;
-    margin-bottom: 0px;
+    padding: 0; }
+
+  .button {
+    padding-left: 39px;
+    padding-right: 39px;
     float: left; }
 
-  .cardgif {
-    padding-left: 100px; } }
+  .dropdown {
+    max-width: 110px; }
+    .dropdown img {
+      margin-top: 10px; }
+    .dropdown a {
+      font-size: 1em;
+      padding-left: 6px;
+      margin: 0; }
+
+  div .CandB, .NH, .IS, .TisI, .WatI {
+    display: inline-block;
+    background: #BCC679;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1em; }
+    div .CandB h4, .NH h4, .IS h4, .TisI h4, .WatI h4 {
+      color: black;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1em;
+      text-decoration: none; }
+      div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
+        color: #0A70B8; }
+    div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
+      display: inline-block; }
+    div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
+      padding-right: 10%;
+      display: inline-block; }
+    div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
+      display: inline-block;
+      color: black;
+      text-decoration: none; }
+      div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+        color: #0A70B8; } }
+@media screen and (min-width: 38em) {
+  .top .cardgif {
+    margin-left: 50px;
+    padding-right: 30px;
+    float: left; }
+
+  .thestorytop h1, .thestorymiddle h1 {
+    padding-top: 2%;
+    padding-left: 12%;
+    padding-bottom: 0;
+    font-size: 2.5em; }
+  .thestorytop h2, .thestorymiddle h2 {
+    padding-top: 2%;
+    padding-bottom: 2%; }
+  .thestorytop img, .thestorymiddle img {
+    padding-top: 0;
+    padding-bottom: 2%;
+    margin-top: 0;
+    margin-left: 12%; }
+  .thestorytop p, .thestorymiddle p {
+    margin-top: 0;
+    padding-bottom: 2%; }
+
+  .bottomnav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8%;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1em; }
+    .bottomnav h3 {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+      font-size: 1.5em; }
+    .bottomnav p {
+      padding-right: 10%;
+      padding-top: 8px;
+      padding-bottom: 8px; }
+    .bottomnav a {
+      color: black; }
+    .bottomnav a:hover {
+      color: #0A70B8; }
+
+  div .CandB, .NH, .IS, .TisI, .WatI {
+    background: #BCC679;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 80px;
+    padding-right: 15%;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1em; }
+    div .CandB h4, .NH h4, .IS h4, .TisI h4, .WatI h4 {
+      padding-bottom: 4px;
+      color: black;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1em;
+      text-decoration: none; }
+      div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
+        color: #0A70B8; }
+    div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
+      text-decoration: none;
+      float: left;
+      display: inline-block; }
+    div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
+      padding-right: 30px; }
+    div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
+      padding-top: 2px;
+      padding-bottom: 5px;
+      color: black; }
+      div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+        color: #0A70B8; }
+
+  .thestorytop p {
+    padding-left: 400px;
+    padding-right: 400px; }
+
+  .thestorymiddle {
+    background-color: #F6F3F7; }
+    .thestorymiddle img {
+      float: left;
+      max-width: 100%;
+      padding-right: 40px; }
+    .thestorymiddle p {
+      padding-left: 40px;
+      padding-right: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
