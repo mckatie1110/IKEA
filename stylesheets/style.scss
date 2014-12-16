@@ -8,6 +8,12 @@ html {
     background-color: $background;
 }
 
+img {
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+
+
 h1 {
     font-family: "futura-pt", sans-serif;
     color: black;
@@ -59,34 +65,23 @@ a:hover {
     color: $grey;
 }
 
-img {
-    padding-bottom: 6%;
-}
 
-.logo {
-    max-width: 50px;
-    margin-top: 20px;
-    margin-left: 24px;
-    float: left;
-    display: inline-block;
+.search {
+    float:right;
+    margin-right:20px;
 
-    img{
-        width:225%;
-    }
-}
-
-.magglass {
+     .magglass {
     margin-top: 20px;
     max-width: 18px;
     float: right;
     display: inline-block;
-}
+    }
 
-input {
-    float: right;
-    margin-top: 20px;
+    input {
+        float: right;
+        margin-top: 20px;
+    }
 }
-
 
 
 .banner::after {
@@ -98,19 +93,26 @@ input {
 .banner {
     a {
         line-height: 1;
-        margin-left: 10%;
         padding: 2%;
         color: black;
     }
 
+    .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    display: inline-block;
+
+    img{
+        max-width:80%;
+    }
+}
+
     .slogan {
     color: $grey;
-    margin-top: 30px;
     margin-bottom: 10px;
-    margin-left: 0px;
     padding-top:10px;
     line-height: 0.2;
-    float: left;
 }
 }
 
@@ -120,15 +122,15 @@ input {
         display: block;
 }
 .outer{
-        width:100%;
-        padding:0, 5%, 0, 5%;
+        width:90%;
+        padding:0 5% 0 5%;
         background-color: $background;
 
        div.icons{
             float:left;
             width:100%;
-            padding-top: 2.5%;
-            padding-bottom: 2.5%;
+            padding-top: 10px;
+            padding-bottom: 10px;
             
             img{
                 float:left;
@@ -138,7 +140,7 @@ input {
 
             a{
               float:left;
-              margin-left:5%;  
+              margin-left:2.5%;  
             }
 
             p{
@@ -148,6 +150,16 @@ input {
         }
   
     }
+
+nav{
+    background: $background;
+    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+    background: -webkit-linear-gradient(top, $background, #bcc679);
+    background: -moz-linear-gradient(top, $background, #bcc679);
+    background: -ms-linear-gradient(top, $background, #bcc679);
+    background: -o-linear-gradient(top, $background, #bcc679);
+    overflow: hidden;
+}
 
 nav li {
     float: none;
@@ -163,7 +175,7 @@ nav li {
     background: -moz-linear-gradient(top, $background, #bcc679);
     background: -ms-linear-gradient(top, $background, #bcc679);
     background: -o-linear-gradient(top, $background, #bcc679);
-    padding: 9.5px 19px;
+    padding: 10px 2.5%;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -192,35 +204,6 @@ nav li {
     background: $grey;
 }
 
-.dropdown {
-    float: right;
-    border-top: 0px;
-    border-bottom: 0px;
-    background: $background;
-    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-    background: -webkit-linear-gradient(top, $background, #bcc679);
-    background: -moz-linear-gradient(top, $background, #bcc679);
-    background: -ms-linear-gradient(top, $background, #bcc679);
-    background: -o-linear-gradient(top, $background, #bcc679);
-    padding: 9.5px 19px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    color: #000000;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: none;
-    vertical-align: middle;
-    img {
-        padding: 0%;
-        width: 25%;
-    }
-    a {
-        padding: 10%;
-    }
-}
 
 .button:hover {
     border-top-color: $grey;
@@ -235,10 +218,10 @@ nav li {
 
 .recall {
     float: none;
-    padding-top: 100px;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
     color: #000000;
     font-family: sans-serif;
     font-style: normal;
@@ -363,6 +346,7 @@ nav li {
 }
 
 .thestorytop {
+
     background-color: $green;
     img {
         max-width: 100%;
@@ -403,9 +387,13 @@ nav li {
 }
 
 .thestorymiddle {
+    clear: both; 
+    overflow: hidden;
     background-color: $background;
+
     img {
-        max-width: 100%;
+        max-width: 50%;
+        float: left;
     }
     h1 {
         padding-top: 10%;
@@ -418,10 +406,11 @@ nav li {
         padding-right: 12%;
         line-height: 1.25;
     }
-    p {
-        padding-left: 12%;
-        padding-right: 12%;
+    .future-text{
+
         line-height: 1.5;
+        float: left;
+        width: 38%;
     }
     h4 {
         padding-left: 12%;
@@ -516,39 +505,11 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     padding: 10%;
 }
 
-@media screen and (min-width: 38em) {
-    .banner {
-        a {
-            line-height: 1;
-            margin-left: 10%;
-            padding: 2%;
-            color: black;
-        }
+@media screen and (min-width: 37em) {
 
-        img{
-            margin-left:10px;
-        }
-
-        .slogan {
-        color: $grey;
-        margin-top: 65px;
-        margin-bottom: 10px;
-        margin-left: -30px;
-        padding-top:10px;
-        line-height: 0.2;
+    .button{
+        width:28.33%;
         float: left;
-    }
-    }
-    .magglass {
-        float: right;
-        margin-top: 30px;
-        margin-right: 80px;
-        max-width: 18px;
-    }
-    input {
-        margin-top: 30px;
-        margin-right: 0px;
-        margin-bottom: 15px;
     }
 
     .cardgif {
@@ -587,12 +548,12 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-    width:100%;
+    width:90%;
     background: $green;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -632,13 +593,11 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 }
 
 @media screen and (min-width: 60em) {
+
     .slogan {
         margin-top: 100px;
         margin-left: 0px;
         padding:0;
-    }
-    .search {
-        max-width: 40px;
     }
 
     .recall{
@@ -648,63 +607,14 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     }
 
     .button{
-        padding-left:39px;
-        padding-right:39px;
-        float:left;
+        width: 15%;
 
     }
 
-    .dropdown{
-       max-width:110px;
-       img{
-        margin-top:10px;
-       }
-        a{
-            font-size:1em;
-            padding-left:6px;
-            margin:0;
-        }
-    }
+
         div .CandB, .NH, .IS, .TisI, .WatI {
             display: inline-block;
-            background: $green;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 10%;
-            padding-right: 15%;
-            font-family: "futura-pt",sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.2;
-            font-size: 1em;
-            h4 {
-                color: black;
-                font-family: "futura-pt",sans-serif;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 1.2;
-                font-size: 1em;
-                text-decoration: none;
-                &:hover {
-                    color: $grey;
-                }
-            }
-            ul {
-                display: inline-block;
-            }
-            li {
-                padding-right: 10%;
-                display: inline-block;
-            }
-            a {
-                display: inline-block;
-                color: black;
-                text-decoration: none;
-                &:hover {
-                    color: $grey;
-                }
-            }
-        }    
+            }    
     }
 
     .top{
@@ -729,9 +639,6 @@ div .CandB, .NH, .IS, .TisI, .WatI {
         }
 
         img{
-            padding-top:0;
-            padding-bottom:2%;
-            margin-top:0;
             margin-left:12%;
         }
 
@@ -771,30 +678,9 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     }
 }
 
-div .CandB, .NH, .IS, .TisI, .WatI {
-    background: $green;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 80px;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 1em;
-    h4 {
-        padding-bottom: 4px;
-        color: black;
-        font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1.2;
-        font-size: 1em;
-        text-decoration: none;
-        &:hover {
-            color: $grey;
-        }
-    }
+.CandB, .NH, .IS, .TisI, .WatI {
+ 
+    
     ul {
         text-decoration: none;
         float:left;
@@ -818,23 +704,12 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 }
 
 .thestorytop{
-    p{
-        padding-left:400px;
-        padding-right:400px;
-    }
+
 }
 
 .thestorymiddle {
     background-color: $background;
-    img {
-        float:left;
-        max-width: 100%;
-        padding-right:40px;
-    }
-    p{
-        padding-left:40px;
-        padding-right:220px;
-    }
+
     }
 
 }

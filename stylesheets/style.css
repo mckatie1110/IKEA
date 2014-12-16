@@ -66,6 +66,10 @@ input, select {
 html {
   background-color: #F6F3F7; }
 
+img {
+  max-width: 100%;
+  padding-bottom: 30px; }
+
 h1 {
   font-family: "futura-pt", sans-serif;
   color: black;
@@ -111,27 +115,17 @@ a {
 a:hover {
   color: #0A70B8; }
 
-img {
-  padding-bottom: 6%; }
-
-.logo {
-  max-width: 50px;
-  margin-top: 20px;
-  margin-left: 24px;
-  float: left;
-  display: inline-block; }
-  .logo img {
-    width: 225%; }
-
-.magglass {
-  margin-top: 20px;
-  max-width: 18px;
+.search {
   float: right;
-  display: inline-block; }
-
-input {
-  float: right;
-  margin-top: 20px; }
+  margin-right: 20px; }
+  .search .magglass {
+    margin-top: 20px;
+    max-width: 18px;
+    float: right;
+    display: inline-block; }
+  .search input {
+    float: right;
+    margin-top: 20px; }
 
 .banner::after {
   content: "";
@@ -140,17 +134,20 @@ input {
 
 .banner a {
   line-height: 1;
-  margin-left: 10%;
   padding: 2%;
   color: black; }
+.banner .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+  display: inline-block; }
+  .banner .logo img {
+    max-width: 80%; }
 .banner .slogan {
   color: #0A70B8;
-  margin-top: 30px;
   margin-bottom: 10px;
-  margin-left: 0px;
   padding-top: 10px;
-  line-height: 0.2;
-  float: left; }
+  line-height: 0.2; }
 
 .outer::after {
   content: "";
@@ -158,24 +155,33 @@ input {
   display: block; }
 
 .outer {
-  width: 100%;
-  padding: 0, 5%, 0, 5%;
+  width: 90%;
+  padding: 0 5% 0 5%;
   background-color: #F6F3F7; }
   .outer div.icons {
     float: left;
     width: 100%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
     .outer div.icons img {
       float: left;
       width: 45%;
       padding-right: 10px; }
     .outer div.icons a {
       float: left;
-      margin-left: 5%; }
+      margin-left: 2.5%; }
     .outer div.icons p {
       margin-left: 5%;
       font-size: 0.75em; }
+
+nav {
+  background: #F6F3F7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F6F3F7), to(#bcc679));
+  background: -webkit-linear-gradient(top, #F6F3F7, #bcc679);
+  background: -moz-linear-gradient(top, #F6F3F7, #bcc679);
+  background: -ms-linear-gradient(top, #F6F3F7, #bcc679);
+  background: -o-linear-gradient(top, #F6F3F7, #bcc679);
+  overflow: hidden; }
 
 nav li {
   float: none;
@@ -190,7 +196,7 @@ nav li {
   background: -moz-linear-gradient(top, #F6F3F7, #bcc679);
   background: -ms-linear-gradient(top, #F6F3F7, #bcc679);
   background: -o-linear-gradient(top, #F6F3F7, #bcc679);
-  padding: 9.5px 19px;
+  padding: 10px 2.5%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -214,33 +220,6 @@ nav li {
   border-top-color: #0A70B8;
   background: #0A70B8; }
 
-.dropdown {
-  float: right;
-  border-top: 0px;
-  border-bottom: 0px;
-  background: #F6F3F7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F6F3F7), to(#bcc679));
-  background: -webkit-linear-gradient(top, #F6F3F7, #bcc679);
-  background: -moz-linear-gradient(top, #F6F3F7, #bcc679);
-  background: -ms-linear-gradient(top, #F6F3F7, #bcc679);
-  background: -o-linear-gradient(top, #F6F3F7, #bcc679);
-  padding: 9.5px 19px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  color: #000000;
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  vertical-align: middle; }
-  .dropdown img {
-    padding: 0%;
-    width: 25%; }
-  .dropdown a {
-    padding: 10%; }
-
 .button:hover {
   border-top-color: #0A70B8;
   background: #0A70B8;
@@ -252,10 +231,10 @@ nav li {
 
 .recall {
   float: none;
-  padding-top: 100px;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
   color: #000000;
   font-family: sans-serif;
   font-style: normal;
@@ -391,9 +370,12 @@ nav li {
       color: #0A70B8; }
 
 .thestorymiddle {
+  clear: both;
+  overflow: hidden;
   background-color: #F6F3F7; }
   .thestorymiddle img {
-    max-width: 100%; }
+    max-width: 50%;
+    float: left; }
   .thestorymiddle h1 {
     padding-top: 10%;
     padding-left: 12%;
@@ -403,10 +385,10 @@ nav li {
     padding-left: 12%;
     padding-right: 12%;
     line-height: 1.25; }
-  .thestorymiddle p {
-    padding-left: 12%;
-    padding-right: 12%;
-    line-height: 1.5; }
+  .thestorymiddle .future-text {
+    line-height: 1.5;
+    float: left;
+    width: 38%; }
   .thestorymiddle h4 {
     padding-left: 12%;
     padding-right: 12%;
@@ -481,33 +463,10 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 .bottom {
   padding: 10%; }
 
-@media screen and (min-width: 38em) {
-  .banner a {
-    line-height: 1;
-    margin-left: 10%;
-    padding: 2%;
-    color: black; }
-  .banner img {
-    margin-left: 10px; }
-  .banner .slogan {
-    color: #0A70B8;
-    margin-top: 65px;
-    margin-bottom: 10px;
-    margin-left: -30px;
-    padding-top: 10px;
-    line-height: 0.2;
+@media screen and (min-width: 37em) {
+  .button {
+    width: 28.33%;
     float: left; }
-
-  .magglass {
-    float: right;
-    margin-top: 30px;
-    margin-right: 80px;
-    max-width: 18px; }
-
-  input {
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-bottom: 15px; }
 
   .cardgif {
     margin-left: 80px; }
@@ -539,12 +498,12 @@ div .CandB, .NH, .IS, .TisI, .WatI {
       color: #0A70B8; }
 
   div .CandB, .NH, .IS, .TisI, .WatI {
-    width: 100%;
+    width: 90%;
     background: #BCC679;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -574,14 +533,11 @@ div .CandB, .NH, .IS, .TisI, .WatI {
       color: black; }
       div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
         color: #0A70B8; } }
-@media screen and (min-width: 38em) and (min-width: 60em) {
+@media screen and (min-width: 37em) and (min-width: 60em) {
   .slogan {
     margin-top: 100px;
     margin-left: 0px;
     padding: 0; }
-
-  .search {
-    max-width: 40px; }
 
   .recall {
     margin-top: 50px;
@@ -589,53 +545,11 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     padding: 0; }
 
   .button {
-    padding-left: 39px;
-    padding-right: 39px;
-    float: left; }
-
-  .dropdown {
-    max-width: 110px; }
-    .dropdown img {
-      margin-top: 10px; }
-    .dropdown a {
-      font-size: 1em;
-      padding-left: 6px;
-      margin: 0; }
+    width: 15%; }
 
   div .CandB, .NH, .IS, .TisI, .WatI {
-    display: inline-block;
-    background: #BCC679;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 1em; }
-    div .CandB h4, .NH h4, .IS h4, .TisI h4, .WatI h4 {
-      color: black;
-      font-family: "futura-pt",sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 1.2;
-      font-size: 1em;
-      text-decoration: none; }
-      div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
-        color: #0A70B8; }
-    div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
-      display: inline-block; }
-    div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
-      padding-right: 10%;
-      display: inline-block; }
-    div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
-      display: inline-block;
-      color: black;
-      text-decoration: none; }
-      div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
-        color: #0A70B8; } }
-@media screen and (min-width: 38em) {
+    display: inline-block; } }
+@media screen and (min-width: 37em) {
   .top .cardgif {
     margin-left: 50px;
     padding-right: 30px;
@@ -650,9 +564,6 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     padding-top: 2%;
     padding-bottom: 2%; }
   .thestorytop img, .thestorymiddle img {
-    padding-top: 0;
-    padding-bottom: 2%;
-    margin-top: 0;
     margin-left: 12%; }
   .thestorytop p, .thestorymiddle p {
     margin-top: 0;
@@ -683,53 +594,20 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     .bottomnav a:hover {
       color: #0A70B8; }
 
-  div .CandB, .NH, .IS, .TisI, .WatI {
-    background: #BCC679;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 80px;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 1em; }
-    div .CandB h4, .NH h4, .IS h4, .TisI h4, .WatI h4 {
-      padding-bottom: 4px;
-      color: black;
-      font-family: "futura-pt",sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 1.2;
-      font-size: 1em;
-      text-decoration: none; }
-      div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
-        color: #0A70B8; }
-    div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
-      text-decoration: none;
-      float: left;
-      display: inline-block; }
-    div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
-      padding-right: 30px; }
-    div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
-      padding-top: 2px;
-      padding-bottom: 5px;
-      color: black; }
-      div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
-        color: #0A70B8; }
-
-  .thestorytop p {
-    padding-left: 400px;
-    padding-right: 400px; }
+  .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
+    text-decoration: none;
+    float: left;
+    display: inline-block; }
+  .CandB li, .NH li, .IS li, .TisI li, .WatI li {
+    padding-right: 30px; }
+  .CandB a, .NH a, .IS a, .TisI a, .WatI a {
+    padding-top: 2px;
+    padding-bottom: 5px;
+    color: black; }
+    .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+      color: #0A70B8; }
 
   .thestorymiddle {
-    background-color: #F6F3F7; }
-    .thestorymiddle img {
-      float: left;
-      max-width: 100%;
-      padding-right: 40px; }
-    .thestorymiddle p {
-      padding-left: 40px;
-      padding-right: 220px; } }
+    background-color: #F6F3F7; } }
 
 /*# sourceMappingURL=style.css.map */
