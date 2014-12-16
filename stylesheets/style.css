@@ -112,57 +112,74 @@ a:hover {
   color: #0A70B8; }
 
 img {
-  max-width: 100%;
   padding-bottom: 6%; }
 
 .logo {
   max-width: 150px;
   margin-top: 5%;
-  margin-left: 20px; }
+  margin-left: 20px;
+  float: left;
+  display: inline-block; }
 
-.search {
-  position: fixed;
-  margin-left: 80%;
-  top: 2.5%;
-  width: 10%;
-  height: 5%; }
+.magglass {
+  margin-top: 20px;
+  max-width: 18px;
+  float: right;
+  display: inline-block; }
+
+input {
+  float: right;
+  margin-top: 20px; }
 
 .slogan {
   color: #0A70B8;
   margin-top: 0;
   margin-left: 40px;
-  padding-bottom: 10%;
-  line-height: 0.2; }
+  line-height: 0.2;
+  float: left; }
 
 .banner::after {
   content: "";
   clear: both;
   display: block; }
 
-.banner div a {
+.banner a {
   line-height: 1;
   margin-left: 10%;
   padding: 2%;
   color: black; }
-.banner div p {
+.banner p {
   line-height: 1;
-  padding: 0;
+  padding-bottom: 50px;
   margin-left: 10%; }
 
 .login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
-  float: none;
-  max-width: 20%;
-  margin-top: 2.5%;
-  margin-left: 15%; }
+  float: left;
+  overflow: hidden;
+  margin-left: 20px; }
+  .login img, .needhelp img, .cart img, .wishlist img, .ikeafamily img, .email img {
+    max-width: 50px;
+    margin-bottom: 0px;
+    float: left; }
   .login a, .needhelp a, .cart a, .wishlist a, .ikeafamily a, .email a {
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 12%; }
+    float: left;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-left: 10px; }
   .login a:hover, .needhelp a:hover, .cart a:hover, .wishlist a:hover, .ikeafamily a:hover, .email a:hover {
     color: #0A70B8; }
 
 li {
   list-style: none; }
+
+.login {
+  padding-top: 20px; }
+
+.wishlist img {
+  padding-left: 32px; }
+
+.needhelp {
+  margin-top: 20px; }
 
 .email {
   padding-bottom: 5%; }
@@ -242,7 +259,7 @@ nav li {
 
 .recall {
   float: none;
-  padding-top: 12%;
+  padding-top: 100px;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
@@ -283,6 +300,8 @@ nav li {
       color: black; }
     .top h4 a:hover {
       color: #0A70B8; }
+  .top .cardgif {
+    margin-left: 70px; }
 
 .catalog {
   background-color: #BCC679;
@@ -390,8 +409,8 @@ div .CandB, .NH, .IS, .TisI, .WatI {
     line-height: 1.2;
     font-size: 1em;
     text-decoration: none; }
-  div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
-    color: #0A70B8; }
+    div .CandB h4:hover, .NH h4:hover, .IS h4:hover, .TisI h4:hover, .WatI h4:hover {
+      color: #0A70B8; }
   div .CandB ul, .NH ul, .IS ul, .TisI ul, .WatI ul {
     display: none; }
   div .CandB li, .NH li, .IS li, .TisI li, .WatI li {
@@ -399,21 +418,93 @@ div .CandB, .NH, .IS, .TisI, .WatI {
   div .CandB a, .NH a, .IS a, .TisI a, .WatI a {
     color: black;
     text-decoration: none; }
-  div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
-    color: #0A70B8; }
+    div .CandB a:hover, .NH a:hover, .IS a:hover, .TisI a:hover, .WatI a:hover {
+      color: #0A70B8; }
 
 .bottom {
   padding: 10%; }
 
 @media screen and (min-width: 38em) {
-  .slogan {
-    margin-left: 5.5%; }
+  .banner p {
+    margin-left: 40px; }
 
-  .search {
-    max-width: 55px;
-    max-height: 55px; } }
+  .slogan {
+    float: left;
+    padding: 0;
+    margin-left: 0px;
+    margin-top: 5px; }
+
+  .magglass {
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+    max-width: 18px; }
+
+  input {
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 15px; }
+
+  .banner .login, .banner .needhelp, .banner .cart, .banner .wishlist, .banner .ikeafamily, .banner .email {
+    float: left;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 50%; }
+  .banner .wishlist {
+    padding: 0;
+    margin-left: 6px; }
+  .banner .email {
+    padding-bottom: 0; }
+
+  .cardgif {
+    padding-left: 100px; } }
 @media screen and (min-width: 60em) {
   .slogan {
-    margin-left: 6.5%; } }
+    margin-top: 100px;
+    margin-left: 0px; }
+
+  .search {
+    max-width: 40px; }
+
+  .banner .needhelp {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 260px; }
+    .banner .needhelp a {
+      margin-top: 20px; }
+  .banner .login {
+    float: right;
+    padding: 0;
+    margin-left: 140px;
+    margin-top: 20px; }
+  .banner .cart {
+    float: left;
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 0px; }
+  .banner .wishlist {
+    float: left;
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 0px; }
+  .banner .ikeafamily {
+    float: left;
+    margin-left: 120px;
+    margin-top: -170px; }
+  .banner .email {
+    float: left;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-top: -160px; }
+  .banner ul img {
+    padding: 0;
+    max-width: 80px;
+    margin-bottom: 0px;
+    float: left; }
+
+  .cardgif {
+    padding-left: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

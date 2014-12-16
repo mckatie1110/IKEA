@@ -1,479 +1,575 @@
-@import 'reset';
+@import "reset";
 
-$background:#F6F3F7;
-$grey:#0A70B8;
-$green:#BCC679;
+$background: #F6F3F7;
+$grey: #0A70B8;
+$green: #BCC679;
 
-
-html{
-    background-color:white;
+html {
+    background-color: white;
 }
 
-h1{
+h1 {
     font-family: "futura-pt", sans-serif;
     color: black;
-    font-size:2em;
-    line-height:1.25;
-    padding-bottom:3%;
-
+    font-size: 2em;
+    line-height: 1.25;
+    padding-bottom: 3%;
 }
 
-h2{
+h2 {
     font-family: "futura-pt",sans-serif;
     font-style: italic;
     font-weight: 500;
-    font-size:1.5em;
-    line-height:1.25;
-    padding-bottom:8%;
-    color:$grey;
+    font-size: 1.5em;
+    line-height: 1.25;
+    padding-bottom: 8%;
+    color: $grey;
 }
 
-h4{
+h4 {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size:1.25em;
-    line-height:1.25;
-    padding-bottom:2%;
-    color:black;
+    font-size: 1.25em;
+    line-height: 1.25;
+    padding-bottom: 2%;
+    color: black;
 }
 
-p{
+p {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height:1.15;
-    font-size:1.1em;
-    padding-bottom:10%;
+    line-height: 1.15;
+    font-size: 1.1em;
+    padding-bottom: 10%;
 }
 
-
-a{
+a {
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height:1.45;
-    font-size:1.15em;
-    text-decoration:none;
-    color:black;
+    line-height: 1.45;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: black;
 }
 
-a:hover{
-    color:$grey;
+a:hover {
+    color: $grey;
 }
 
-img{
-    max-width:100%;
-    padding-bottom:6%;
+img {
+    padding-bottom: 6%;
 }
 
-.logo{
-    max-width:150px;
-    margin-top:5%;
-    margin-left:20px;
+.logo {
+    max-width: 150px;
+    margin-top: 5%;
+    margin-left: 20px;
+    float: left;
+    display: inline-block;
 }
 
-.search{
-        position:fixed;
-        margin-left:80%;
-        top:2.5%;
-        width:10%;
-        height:5%;
-
-    }
-
-
-.slogan{
-        color:$grey;
-        margin-top:0;
-        margin-left:40px;
-        padding-bottom:10%;
-        line-height:0.2;
+.magglass{
+    margin-top: 20px;
+    max-width: 18px;
+    float: right;
+    display: inline-block;
 }
 
+input {
+    float: right;
+    margin-top: 20px;
+}
+
+.slogan {
+    color: $grey;
+    margin-top: 0;
+    margin-left: 40px;
+    line-height: 0.2;
+    float: left;
+}
 
 .banner::after {
-content: "";
-clear: both;
-display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
-.banner div{
-
-    a{
+.banner {
+    a {
         line-height: 1;
-        margin-left:10%;
-        padding:2%;
-        color:black;
+        margin-left: 10%;
+        padding: 2%;
+        color: black;
+    }
+    p {
+        line-height: 1;
+        padding-bottom: 50px;
+        margin-left: 10%;
+    }
+}
+
+.login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    img {
+        max-width: 50px;
+        margin-bottom: 0px;
+        float: left;
 
     }
-
-    p{
-        line-height: 1;
+    a {
+        float: left;
         padding:0;
-        margin-left:10%;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    a:hover {
+        color: $grey;
     }
 }
 
-    .login, .needhelp, .cart, .wishlist, .ikeafamily, .email{
-        float:none;
-        max-width:20%;
-        margin-top:2.5%;
-        margin-left:15%;
-
-
-        a{
-            position:absolute;
-            margin-top: 5%;
-            margin-left:12%;
-        }
-
-        a:hover{
-            color:$grey;
-            }       
-
-    }
-
-
-    li{
-        list-style: none;
-    }
-
-.email{
-    padding-bottom:5%;
+li {
+    list-style: none;
 }
 
+.login{
+    padding-top:20px;
+}
 
-nav li{
-    float:none;
+    .wishlist{
+    img{
+        padding-left:32px;
+    }
+}
+
+.needhelp{
+    margin-top: 20px;
+
+}
+
+.email {
+    padding-bottom: 5%;
+}
+
+nav li {
+    float: none;
     list-style-type: none;
 }
 
 .button {
-   border-top: 0px;
-   border-bottom: 0px;
-   background: $background;
-   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-   background: -webkit-linear-gradient(top, $background, #bcc679);
-   background: -moz-linear-gradient(top, $background, #bcc679);
-   background: -ms-linear-gradient(top, $background, #bcc679);
-   background: -o-linear-gradient(top, $background, #bcc679);
-   padding: 9.5px 19px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   color: #000000;
-        
-        a{
-            font-family: "futura-pt",sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            text-decoration: none;
-            vertical-align: middle;
-        }
-
-
-   }
-.button:hover {
-   border-top-color: $grey;
-   background: $grey;
-   color: $background;
-
-    a, a:hover{
-    color:white;
-   }
-  }
-
-.button:active {
-   border-top-color: $grey;
-   background: $grey;
-   }
-
- .dropdown{
-   float:right;
-   border-top: 0px;
-   border-bottom: 0px;
-   background: $background;
-   background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
-   background: -webkit-linear-gradient(top, $background, #bcc679);
-   background: -moz-linear-gradient(top, $background, #bcc679);
-   background: -ms-linear-gradient(top, $background, #bcc679);
-   background: -o-linear-gradient(top, $background, #bcc679);
-   padding: 9.5px 19px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   color: #000000;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $background;
+    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+    background: -webkit-linear-gradient(top, $background, #bcc679);
+    background: -moz-linear-gradient(top, $background, #bcc679);
+    background: -ms-linear-gradient(top, $background, #bcc679);
+    background: -o-linear-gradient(top, $background, #bcc679);
+    padding: 9.5px 19px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #000000;
+    a {
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-   text-decoration: none;
-   vertical-align: middle;
-
-    img{
-        padding:0%;
-        width:25%;
+        text-decoration: none;
+        vertical-align: middle;
     }
+}
 
-    a{
-        padding:10%;
-    }
-   }
 .button:hover {
-   border-top-color: $grey;
-   background: $grey;
-   color: $background;
-   }
+    border-top-color: $grey;
+    background: $grey;
+    color: $background;
+    a, a:hover {
+        color: white;
+    }
+}
+
 .button:active {
-   border-top-color: $grey;
-   background: $grey;
-   }
-   
-
-.recall{
-    float:none;
-    padding-top:12%;
-    padding-bottom:5%;
-    padding-left:5%;
-    padding-right:5%;
-       color: #000000;
-        font-family:sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
+    border-top-color: $grey;
+    background: $grey;
 }
 
-.top{
-background-color:$green;
-
-
-    img{
-        max-width:100%;
+.dropdown {
+    float: right;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $background;
+    background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
+    background: -webkit-linear-gradient(top, $background, #bcc679);
+    background: -moz-linear-gradient(top, $background, #bcc679);
+    background: -ms-linear-gradient(top, $background, #bcc679);
+    background: -o-linear-gradient(top, $background, #bcc679);
+    padding: 9.5px 19px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #000000;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    vertical-align: middle;
+    img {
+        padding: 0%;
+        width: 25%;
     }
-    
-    h1{
-        padding-top:10%;
-        padding-left:12%;
-        padding-right:12%;
-        line-height:1.5;
-    }
-
-    h2{
-        padding-left:12%;
-        padding-right:12%;
-        line-height:1.25;
-    }
-
-    p{
-        padding-left:12%;
-        padding-right:12%;
-        line-height:1.5;
-    }
-
-    h4{
-        padding-left:12%;
-        padding-right:12%;
-        line-height:1.25;
-
-    a
-        {font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size:1em;
-        line-height:1.25;
-        padding-bottom:2%;
-        color:black;
-        }
-
-        a:hover{
-        color:$grey;
+    a {
+        padding: 10%;
     }
 }
 
+.button:hover {
+    border-top-color: $grey;
+    background: $grey;
+    color: $background;
 }
 
-.catalog{
-    background-color:$green;
-    padding-top:0;
-    padding-left:12%;
-    padding-bottom:10%;
+.button:active {
+    border-top-color: $grey;
+    background: $grey;
 }
 
-.inspiration{
-    background-color:$background;
-    padding-top:15%;
-    padding-bottom:15%;
-    padding-left:12%;
-    padding-right:12%;
+.recall {
+    float: none;
+    padding-top: 100px;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
 }
 
-.PS2014{
-    background-color:$green;
-    padding-top:15%;
-    padding-bottom:15%;
-    padding-left:12%;
-    padding-right:12%;
-}
-
-.nowatikea{
-    background-color:$background;
-    padding-top:15%;
-    padding-bottom:15%;
-    padding-left:12%;
-    padding-right:12%;
-        p{
+.top {
+    background-color: $green;
+    img {
+        max-width: 100%;
+    }
+    h1 {
+        padding-top: 10%;
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 1.5;
+    }
+    h2 {
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 1.25;
+    }
+    p {
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 1.5;
+    }
+    h4 {
+        padding-left: 12%;
+        padding-right: 12%;
+        line-height: 1.25;
+        a {
             font-family: "futura-pt",sans-serif;
             font-style: normal;
-            font-weight: 400;
-            line-height: 1.5;
+            font-weight: 600;
+            font-size: 1em;
+            line-height: 1.25;
+            padding-bottom: 2%;
+            color: black;
         }
-}
-
-.featured{
-    background-color:$green;
-    padding-top:15%;
-    padding-bottom:15%;
-    padding-left:12%;
-    padding-right:12%;
-
-    p{
-            font-family: "futura-pt",sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.5;
+        a:hover {
+            color: $grey;
         }
-}
-
-.ideas{
-    background-color:$background;
-    padding-top:15%;
-    padding-bottom:15%;
-    padding-left:12%;
-    padding-right:12%;
-}
-
-.reccomendation{
-    background-color:$green;
-    padding-top:15%;
-    padding-bottom:10%;
-    padding-left:12%;
-    padding-right:12%;
-
-    a{
-        padding-bottom:15%;
     }
-
-    img{
-    padding-top:10%;
+    .cardgif {
+        margin-left: 70px;
+    }
 }
+
+.catalog {
+    background-color: $green;
+    padding-top: 0;
+    padding-left: 12%;
+    padding-bottom: 10%;
+}
+
+.inspiration {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.PS2014 {
+    background-color: $green;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.nowatikea {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+    p {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.featured {
+    background-color: $green;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+    p {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+
+.ideas {
+    background-color: $background;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.reccomendation {
+    background-color: $green;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    a {
+        padding-bottom: 15%;
+    }
+    img {
+        padding-top: 10%;
+    }
 }
 
 //**Footer**//
 
-.bottomnav{
-    padding-top:8%;
-    padding-bottom:8%;
-    padding-left:8%;
-    padding-right:15%;
+.bottomnav {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    padding-right: 15%;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height:1.5;
-    font-size:1em;
-
-    h3{
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    line-height:1.5;
-    font-size:1.5em;
+    line-height: 1.5;
+    font-size: 1em;
+    h3 {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5em;
     }
-
-    p{
-        padding-right:10%;
-        padding-top:4%;
-        padding-bottom:4%;
+    p {
+        padding-right: 10%;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
-
-    a{
-        color:black;
+    a {
+        color: black;
     }
-
-    a:hover{
-        color:$grey;
+    a:hover {
+        color: $grey;
     }
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-    background:$green;
-    padding-top:5%;
-    padding-bottom:5%;
-    padding-left:10%;
-    padding-right:15%;
+    background: $green;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 15%;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height:1.2;
-    font-size:1em;
-
-    h4{
-        color:black;
+    line-height: 1.2;
+    font-size: 1em;
+    h4 {
+        color: black;
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 600;
-        line-height:1.2;
-        font-size:1em;
+        line-height: 1.2;
+        font-size: 1em;
         text-decoration: none;
-            }
-
-        h4:hover{
-        color:$grey;
-            }
-
-    ul{
-        display:none;
+        &:hover {
+            color: $grey;
+        }
     }
-
-    li{
-        padding-right:10%;
+    ul {
+        display: none;
     }
-
-        a{
-        color:black;
+    li {
+        padding-right: 10%;
+    }
+    a {
+        color: black;
         text-decoration: none;
+        &:hover {
+            color: $grey;
+        }
+    }
+}
+
+.bottom {
+    padding: 10%;
+}
+
+@media screen and (min-width: 38em) {
+    .banner p {
+        margin-left: 40px;
+    }
+
+     .slogan {
+        float:left;
+        padding:0;
+        margin-left: 0px;
+        margin-top:5px;
+    }
+
+    .magglass{
+
+        float:right;
+        margin-top:30px;
+        margin-right:80px;
+        max-width: 18px;
+    }
+
+    input{
+
+        margin-top:30px;
+        margin-right:0px;
+        margin-bottom:15px;
+    }
+
+    .banner {
+        .login, .needhelp, .cart, .wishlist, .ikeafamily, .email {
+            float:left;
+            padding:0;
+            margin-top:0;
+            margin-bottom:10px;
+            margin-left:40px;
+            width:50%;
+        }
+
+        .wishlist{
+            padding:0;
+            margin-left:6px;
+        }
+
+        .email {
+            padding-bottom: 0;
+        }
+    }
+
+.cardgif {
+        padding-left: 100px;
+ }
+
+ footer{
+
+ }
+
+}
+
+@media screen and (min-width: 60em) {
+    .slogan {
+        margin-top:100px;
+        margin-left: 0px;
+    }
+    .search {
+        max-width: 40px;
+    }
+
+    .banner {
+
+        .needhelp{
+            float:right;
+            margin-bottom:20px;
+            margin-top:260px;
+
+            a{
+                margin-top:20px;
             }
-
-        a:hover{
-        color:$grey;
-            }
-
         }
 
-    .bottom{
-        padding:10%;
-    }
 
-    @media screen and (min-width: 38em) {
+         .login{
+            float:right;
+            padding:0;
+            margin-left:140px;
+            margin-top:20px;
+           
+        }
+
+        .cart{
+            float:left;
+            padding:0;
+            margin-top:0px;
+            margin-left:0px;
+        }
+
+        .wishlist{
+            float:left;
+            padding:0;
+            margin-top:0px;
+            margin-left:0px;
+        }
         
-        .slogan{
-            margin-left:5.5%;
+
+        .ikeafamily{
+        float:left;
+        margin-left:120px;
+        margin-top:-170px;
+    
         }
 
-        .search{
-            max-width:55px;
-            max-height:55px;
+
+         .email{
+            float:left;
+            padding-top:30px;
+            margin-left:40px;
+            margin-top:-160px;
         }
 
+     
+
+        ul img {
+        padding:0;
+        max-width: 80px;
+        margin-bottom: 0px;
+        float: left;
     }
+}
 
-    @media screen and (min-width: 60em) {
-        
-        .slogan{
-            margin-left:6.5%;
-        }
-
-    }
-
-
+.cardgif {
+        padding-left: 100px;
+ }
+}
