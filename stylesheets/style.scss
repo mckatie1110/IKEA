@@ -13,7 +13,6 @@ img {
     padding-bottom: 30px;
 }
 
-
 h1 {
     font-family: "futura-pt", sans-serif;
     color: black;
@@ -65,24 +64,20 @@ a:hover {
     color: $grey;
 }
 
-
 .search {
-    float:right;
-    margin-right:20px;
-
-     .magglass {
-    margin-top: 20px;
-    max-width: 18px;
     float: right;
-    display: inline-block;
+    margin-right: 20px;
+    .magglass {
+        margin-top: 20px;
+        max-width: 18px;
+        float: right;
+        display: inline-block;
     }
-
     input {
         float: right;
         margin-top: 20px;
     }
 }
-
 
 .banner::after {
     content: "";
@@ -91,67 +86,55 @@ a:hover {
 }
 
 .banner {
-    a {
-        line-height: 1;
-        padding: 2%;
-        color: black;
-    }
-
     .logo {
-    margin-top: 20px;
-    margin-left: 20px;
-    float: left;
-    display: inline-block;
-
-    img{
-        max-width:80%;
-    }
-}
-
-    .slogan {
-    color: $grey;
-    margin-bottom: 10px;
-    padding-top:10px;
-    line-height: 0.2;
-}
-}
-
-  .outer::after {
-        content: "";
-        clear: both;
-        display: block;
-}
-.outer{
-        width:90%;
-        padding:0 5% 0 5%;
-        background-color: $background;
-
-       div.icons{
-            float:left;
-            width:100%;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            
-            img{
-                float:left;
-                width:45%;
-                padding-right:10px;
-            }
-
-            a{
-              float:left;
-              margin-left:2.5%;  
-            }
-
-            p{
-                margin-left:5%;
-                font-size:0.75em;
-            }
+        margin-top: 20px;
+        margin-left: 20px;
+        float: left;
+        display: inline-block;
+        img {
+            max-width: 80%;
         }
-  
     }
+    .slogan {
+        color: $grey;
+        margin-bottom: 10px;
+        line-height: 0.2;
+    }
+}
 
-nav{
+.outer::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.outer {
+    width: 90%;
+    padding: 0 5% 0 5%;
+    background-color: $background;
+    div.icons {
+        float: left;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        img {
+            float: left;
+            width: 40%;
+            padding-right: 12px;
+        }
+        a {
+            float: left;
+            margin-left: 40px;
+        }
+        p {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 0.65em;
+        }
+    }
+}
+
+nav {
     background: $background;
     background: -webkit-gradient(linear, left top, left bottom, from($background), to(#bcc679));
     background: -webkit-linear-gradient(top, $background, #bcc679);
@@ -204,7 +187,6 @@ nav li {
     background: $grey;
 }
 
-
 .button:hover {
     border-top-color: $grey;
     background: $grey;
@@ -217,12 +199,12 @@ nav li {
 }
 
 .recall {
+    background-color: #F9CD32;
     float: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 25%;
-    padding-right: 25%;
-    color: #000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -230,7 +212,7 @@ nav li {
 }
 
 .top {
-    background-color: $green;
+    background-color: $background;
     img {
         max-width: 100%;
     }
@@ -243,6 +225,7 @@ nav li {
     h2 {
         padding-left: 12%;
         padding-right: 12%;
+        padding-bottom: 3%;
         line-height: 1.25;
     }
     p {
@@ -268,37 +251,43 @@ nav li {
         }
     }
     .cardgif {
-        margin-left: 20px;
+        margin-top: 20px;
+        margin-left: 60px;
     }
+
 }
 
 .catalog {
     background-color: $green;
     padding-top: 0;
-    padding-left: 12%;
-    padding-bottom: 10%;
+    padding-left: 150px;
+    padding-bottom: 20px;
+
+        ul{
+            list-style-type: none;
+        }
 }
 
 .inspiration {
     background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
 }
 
 .PS2014 {
-    background-color: $green;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    background-color: #F9CD32;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
 }
 
 .nowatikea {
-    background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    background-color: $green;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
     p {
@@ -310,9 +299,9 @@ nav li {
 }
 
 .featured {
-    background-color: $green;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    background-color: $background;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
     p {
@@ -324,17 +313,17 @@ nav li {
 }
 
 .ideas {
-    background-color: $background;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    background-color: $green;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
 }
 
 .reccomendation {
-    background-color: $green;
-    padding-top: 15%;
-    padding-bottom: 10%;
+    background-color: $background;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 12%;
     padding-right: 12%;
     a {
@@ -346,7 +335,6 @@ nav li {
 }
 
 .thestorytop {
-
     background-color: $green;
     img {
         max-width: 100%;
@@ -387,13 +375,12 @@ nav li {
 }
 
 .thestorymiddle {
-    clear: both; 
+    clear: both;
     overflow: hidden;
     background-color: $background;
-
     img {
-        max-width: 50%;
-        float: left;
+        max-width: 75%;
+        margin-left:40px;
     }
     h1 {
         padding-top: 10%;
@@ -402,31 +389,19 @@ nav li {
         line-height: 1.5;
     }
     h2 {
+        margin-top:20px;
         padding-left: 12%;
         padding-right: 12%;
         line-height: 1.25;
     }
-    .future-text{
-
+    .future-text {
+        float:none;
+        width:70%;
+        color:black;
         line-height: 1.5;
-        float: left;
-        width: 38%;
-    }
-    h4 {
-        padding-left: 12%;
-        padding-right: 12%;
-        line-height: 1.25;
-        a {
-            font-family: "futura-pt",sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 1em;
-            line-height: 1.25;
-            padding-bottom: 2%;
-            color: black;
-        }
-        a:hover {
-            color: $grey;
+
+        p{
+            margin-left:50px;
         }
     }
 }
@@ -434,21 +409,15 @@ nav li {
 //**Footer**//
 
 .bottomnav {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    padding-left: 8%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 1em;
+    background-color:$green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
     h3 {
         font-family: "futura-pt",sans-serif;
         font-style: normal;
         font-weight: 600;
         line-height: 1.5;
-        font-size: 1.5em;
     }
     p {
         padding-right: 10%;
@@ -464,11 +433,10 @@ nav li {
 }
 
 div .CandB, .NH, .IS, .TisI, .WatI {
-    background: $green;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 15%;
+    background: $background;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -502,214 +470,252 @@ div .CandB, .NH, .IS, .TisI, .WatI {
 }
 
 .bottom {
-    padding: 10%;
+    background-color: $background;
+    padding: 5%;
+}
+
+.thestorymiddle{
+    p{
+        padding-left:0;
+        margin-left:260px;
+        width:100%;
+    }
 }
 
 @media screen and (min-width: 37em) {
-
-    .button{
-        width:28.33%;
+    .button {
+        width: 28.33%;
         float: left;
     }
-
     .cardgif {
         margin-left: 80px;
     }
+
+    .future-text{
+   margin-left:20px;
+    }
+
     .bottomnav {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1;
-    font-size: 1em;
-    h3 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 8%;
+        padding-right: 15%;
         font-family: "futura-pt",sans-serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1;
-        font-size: 1.5em;
+        font-size: 1em;
+        h3 {
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1;
+            font-size: 1.5em;
+            padding-bottom:15px;
+        }
+        p {
+            padding-right: 10%;
+            padding-top: 2px;
+            padding-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: $grey;
+        }
     }
-    p {
-        padding-right: 10%;
-        padding-top: 2px;
-        padding-bottom: 15px;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
-
-        color: $grey;
-    }
-}
-
-div .CandB, .NH, .IS, .TisI, .WatI {
-    width:90%;
-    background: $green;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 1.5em;
-    text-decoration: none;
-    h4 {
-        color: black;
+    div .CandB {
+        width: 90%;
+        background-color:$background;
+        padding-top: 20px;
+        padding-bottom: 1px;
+        padding-left: 5%;
+        padding-right: 5%;
         font-family: "futura-pt",sans-serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 1.5;
         font-size: 1em;
-        padding-top:10px;
-        &:hover {
-            color: $grey;
-        }
-    }
-    ul {
-        display: inline-block;
-        width:100%;
-    }
-    li {
-        list-style-type: none;
-        float:left;
-        padding-right: 10px;
-    }
-    a {
-
-        padding-bottom:10px;
         text-decoration: none;
-        color: black;
-        &:hover {
-            color: $grey;
-        }
-    }
-}
-
-@media screen and (min-width: 60em) {
-
-    .slogan {
-        margin-top: 100px;
-        margin-left: 0px;
-        padding:0;
-    }
-
-    .recall{
-        margin-top:50px;
-        margin-left:40px;
-        padding:0;
-    }
-
-    .button{
-        width: 15%;
-
-    }
-
-
-        div .CandB, .NH, .IS, .TisI, .WatI {
-            display: inline-block;
-            }    
-    }
-
-    .top{
-         .cardgif {
-                margin-left:50px;
-                padding-right:30px;
-                float:left;
+        h4 {
+            color: black;
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.2;
+            font-size: 1em;
+            padding-top: 40px;
+            &:hover {
+                color: $grey;
             }
-    }
-
-    .thestorytop, .thestorymiddle{
-        h1{
-            padding-top:2%;
-            padding-left:12%;
-            padding-bottom:0;
-            font-size: 2.5em;
         }
+        ul {
+            display: inline-block;
+            width: 100%;
+        }
+        li {
+            list-style-type: none;
+            float: left;
+            padding-right: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: $grey;
+            }
+        }
+    }
+    .NH, .IS, .TisI, .WatI {
+        width: 90%;
+        background-color:$background;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 1em;
+        text-decoration: none;
+        h4 {
+            color: black;
+            font-family: "futura-pt",sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.5;
+            font-size: 1em;
+            margin-top: 30px;
+            padding-bottom: 0;
+            &:hover {
+                color: $grey;
+            }
+        }
+        ul {
+            display: inline-block;
+            width: 100%;
+        }
+        li {
+            list-style-type: none;
+            float: left;
+            padding-right: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: $grey;
+            }
+        }
+    }
+    @media screen and (min-width: 60em) {
+        .slogan {
+            margin-left: 0px;
+            padding-bottom: 40px;
+        }
+        .outer {
+            width: 90%;
+            padding: 0 5% 0 5%;
+            background-color: $background;
+            div.icons {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                img {
+                    width: 30%;
+                    padding-right: 10px;
+                }
+                a {
+                    width: 12%;
+                    float: left;
+                }
+                p {
+                    font-size: 1em;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .recall {
+            margin-top: 50px;
+            padding: 20px;
+            h5 {
+                margin-left: 60px;
+            }
+        }
+        .button {
+            width: 15%;
+        }
+        div .CandB, .NH, .IS, .TisI, .WatI {
+            background-color: $background;
+            display: inline-block;
+            padding-bottom:0
+        }
+    .top {
 
-        h2{
-            padding-top:2%;
-            padding-bottom:2%;
+        h1 {
+            padding-top:40px;
         }
 
         img{
-            margin-left:12%;
+            max-width:30%;
+            margin-left:170px;
+        }
+        .cardgif {
+            margin-left: 35px;
+            padding-right: 18px;
+            float: left;}
         }
 
-        p{
-            margin-top:0;
-            padding-bottom:2%;
+    .thestorytop {
+        h1 {
+            padding-top: 2%;
+            padding-left: 12%;
+            padding-bottom: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        img {
+            max-width: 76%;
+            margin-left: 12%;
+        }
+        p {
+            margin-top: 0;
+            padding-bottom: 2%;
         }
     }
 
- .bottomnav {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8%;
-    padding-right: 15%;
-    font-family: "futura-pt",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 1em;
-    h3 {
-        font-family: "futura-pt",sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1.5;
-        font-size: 1.5em;
+    .thestorymiddle{
+        h2{
+            margin-top:30px;
+            padding-bottom:20px;
+        }
+        img {
+            float:left;
+            max-width: 30%;
+            margin-left: 150px;
+        }
     }
-    p {
-        padding-right: 10%;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-    a {
-        color: black;
-    }
-    a:hover {
-        color: $grey;
-    }
-}
 
-.CandB, .NH, .IS, .TisI, .WatI {
- 
+    .future-text {
+        p {
+            float:left;
+            max-width:35%;
+            margin-left: 30px;
+            line-height: 1.5;
+            margin-bottom:20px;
+            padding-bottom:5px;
+            }
+        }
+
+    .bottomnav {
+        background-color: $green;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
     
-    ul {
-        text-decoration: none;
-        float:left;
-        display: inline-block;
-
-    }
-    li {
-
-        padding-right: 30px;
-    }
-    a {
-        padding-top:2px;
-        padding-bottom:5px;
-        color: black;
-        
-        &:hover {
-            color: $grey;
-        }
-    }
-
-}
-
-.thestorytop{
-
-}
-
-.thestorymiddle {
-    background-color: $background;
-
-    }
-
-}
+    }}
